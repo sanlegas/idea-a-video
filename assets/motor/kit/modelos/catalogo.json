@@ -1,0 +1,1522 @@
+{
+ "abeja": {
+  "en": "abeja de juguete regordeta: cuerpo amarillo con rayas negras, ojos grandes, antenas y alas transparentes ala_i y ala_d que aletean",
+  "medidas": [
+   1.4329,
+   1.071,
+   1.762
+  ],
+  "partes": [
+   "ala_d",
+   "ala_i"
+  ]
+ },
+ "adulto_control": {
+  "en": "adulto de juguete con barba y saco verde, sostiene un control de videojuego",
+  "medidas": [
+   0.916,
+   2.35,
+   1.08
+  ]
+ },
+ "agenda": {
+  "en": "agenda de contactos azul de pie; la portada (portada) se pinta",
+  "medidas": [
+   1.0243,
+   1.3,
+   0.3
+  ],
+  "partes": [
+   "portada"
+  ]
+ },
+ "ala_corte": {
+  "en": "corte de un ala: piel transparente (piel), tanque de combustible ámbar (tanque), fila de tornillos (tornillos) y piel gruesa (refuerzo)",
+  "medidas": [
+   3.3,
+   0.745,
+   1.6
+  ],
+  "partes": [
+   "piel",
+   "refuerzo",
+   "tanque",
+   "tornillos"
+  ]
+ },
+ "amigo_barba": {
+  "en": "amigo de juguete de cabeza grande con barba, lentes y camiseta roja",
+  "medidas": [
+   0.97,
+   2.35,
+   0.96
+  ]
+ },
+ "arbol": {
+  "en": "árbol redondo de juguete, verde",
+  "medidas": [
+   1.34,
+   1.91,
+   1
+  ]
+ },
+ "arbol_rama": {
+  "en": "árbol de juguete con tronco café, copa verde redonda y una rama larga horizontal (rama) donde puede sentarse alguien",
+  "medidas": [
+   4.02,
+   4.3199,
+   1.5
+  ],
+  "partes": [
+   "rama"
+  ]
+ },
+ "asador": {
+  "en": "asador redondo con tres cortes de carne",
+  "medidas": [
+   1.16,
+   0.8755,
+   1.16
+  ]
+ },
+ "auto_carreras_azul": {
+  "en": "auto de carreras azul"
+ },
+ "auto_carreras_naranja": {
+  "en": "auto de carreras naranja"
+ },
+ "auto_carreras_verde": {
+  "en": "auto de carreras verde"
+ },
+ "avion": {
+  "en": "avión de pasajeros de juguete blanco con cola azul, nariz hacia +x, ventanillas (ventanilla), dos motores y tren de aterrizaje (tren)",
+  "medidas": [
+   5.22,
+   2.08,
+   4.9
+  ],
+  "partes": [
+   "fuselaje",
+   "prisma",
+   "tren"
+  ]
+ },
+ "banca": {
+  "en": "banca de madera de plaza con patas de hierro",
+  "medidas": [
+   1.6,
+   0.9222,
+   0.45
+  ]
+ },
+ "bandera": {
+  "en": "bandera en un asta; la tela (tela) se pinta",
+  "medidas": [
+   1.23,
+   2.27,
+   0.4
+  ],
+  "partes": [
+   "tela"
+  ]
+ },
+ "bateria_carga": {
+  "en": "batería de pie con la carga verde (carga) que baja",
+  "medidas": [
+   0.7,
+   1.5,
+   0.42
+  ],
+  "partes": [
+   "carga"
+  ]
+ },
+ "bateria_coche": {
+  "en": "batería de coche gris oscuro con ventana frontal y líquido verde (liquido, escala y = nivel), botón START STOP brillante encima (boton), bornes rojo (borne_pos) y azul (borne_neg)",
+  "medidas": [
+   2.08,
+   1.9,
+   1.3
+  ],
+  "partes": [
+   "boton",
+   "liquido"
+  ]
+ },
+ "billetes": {
+  "en": "fajos de billetes verdes",
+  "medidas": [
+   1.2169,
+   0.6092,
+   0.7413
+  ]
+ },
+ "bomba_gasolina": {
+  "en": "bomba de gasolina roja con pantalla blanca y manguera negra",
+  "medidas": [
+   0.8895,
+   1.62,
+   0.55
+  ]
+ },
+ "busto": {
+  "en": "busto de juguete de cabeza grande, de frente, camisa azul; los ojos (ojos) se pueden cerrar",
+  "medidas": [
+   1.5,
+   1.9525,
+   1.415
+  ],
+  "partes": [
+   "ojos"
+  ]
+ },
+ "busto_barba": {
+  "en": "busto de juguete de cabeza grande con barba y lentes, de frente; los ojos (ojos) se pueden cerrar",
+  "medidas": [
+   1.5,
+   1.9525,
+   1.415
+  ],
+  "partes": [
+   "ojos"
+  ]
+ },
+ "busto_obrero": {
+  "en": "busto de juguete de cabeza grande con casco amarillo de obra, de frente; los ojos (ojos) se pueden cerrar",
+  "medidas": [
+   1.64,
+   2.029,
+   1.64
+  ],
+  "partes": [
+   "ojos"
+  ]
+ },
+ "busto_traje": {
+  "en": "busto de juguete de cabeza grande de traje oscuro y corbata roja, de frente; los ojos (ojos) se pueden cerrar",
+  "medidas": [
+   1.54,
+   1.9625,
+   1.415
+  ],
+  "partes": [
+   "ojos"
+  ]
+ },
+ "cabina_avion": {
+  "en": "interior de un avión: pared crema con dos ventanillas ovaladas (cielo_1, cielo_2), repisa gris y un asiento azul",
+  "medidas": [
+   2.9,
+   2.07,
+   0.83
+  ],
+  "partes": [
+   "cielo_1",
+   "cielo_2"
+  ]
+ },
+ "cafetera": {
+  "en": "cafetera metálica con pico a la izquierda y asa negra",
+  "medidas": [
+   0.8221,
+   0.64,
+   0.48
+  ]
+ },
+ "caja_juego": {
+  "en": "caja de videojuego de pie; su portada (portada) está en blanco para pintarle un título",
+  "medidas": [
+   0.95,
+   1.35,
+   0.13
+  ],
+  "partes": [
+   "portada"
+  ]
+ },
+ "calculadora": {
+  "en": "calculadora de los 70 negra con pantalla roja de LED y teclas doradas y blancas",
+  "medidas": [
+   0.55,
+   0.95,
+   0.115
+  ],
+  "partes": [
+   "pantalla"
+  ]
+ },
+ "calendario": {
+  "en": "calendario de escritorio de pie; la hoja (hoja) se pinta con la fecha y una hoja suelta (volante) se voltea hacia arriba",
+  "medidas": [
+   1.3,
+   1.38,
+   0.55
+  ],
+  "partes": [
+   "hoja",
+   "volante"
+  ]
+ },
+ "cama": {
+  "en": "cama de madera con colchón blanco, almohada y cobija azul (cobija), la piecera hacia la cámara",
+  "medidas": [
+   1.72,
+   1.3,
+   2.63
+  ],
+  "partes": [
+   "cobija"
+  ]
+ },
+ "candado": {
+  "en": "candado dorado cerrado"
+ },
+ "carpeta": {
+  "en": "carpeta amarilla de pie con papeles y una etiqueta (etiqueta) que se pinta",
+  "medidas": [
+   0.95,
+   1.29,
+   0.11
+  ],
+  "partes": [
+   "etiqueta"
+  ]
+ },
+ "casa": {
+  "en": "casa de juguete naranja de frente, techo rojo, puerta, ventanas y número (numero) junto a la puerta",
+  "medidas": [
+   2.3,
+   2.3,
+   1.6
+  ],
+  "partes": [
+   "numero",
+   "techo"
+  ]
+ },
+ "casa_verde": {
+  "en": "casa de juguete verde de frente, techo azul, puerta, ventanas y número (numero) junto a la puerta",
+  "medidas": [
+   2.3,
+   2.3,
+   1.6
+  ],
+  "partes": [
+   "numero",
+   "techo"
+  ]
+ },
+ "celular": {
+  "en": "celular moderno de pie con funda morada oscura y una pantalla grande (pantalla) donde se pinta el video",
+  "medidas": [
+   0.82,
+   1.64,
+   0.126
+  ],
+  "partes": [
+   "pantalla"
+  ]
+ },
+ "celular_negro": {
+  "en": "celular negro de pie con la pantalla oscura (pantalla)",
+  "medidas": [
+   0.8,
+   1.6,
+   0.116
+  ],
+  "partes": [
+   "pantalla"
+  ]
+ },
+ "cerebro": {
+  "en": "cerebro rosa de juguete con pliegues, ojos grandes con párpados (parpado_d, parpado_i; rotación x: 0 abiertos, 1.25 con sueño, 2.8 cerrados), boca sonriente (boca), bracitos con guantes blancos (brazo_d, brazo_i) y piernitas con tenis blancos",
+  "medidas": [
+   2.26,
+   1.7553,
+   1.5728
+  ],
+  "partes": [
+   "boca",
+   "brazo_d",
+   "brazo_i",
+   "cuerpo",
+   "parpado_d",
+   "parpado_i"
+  ]
+ },
+ "chip": {
+  "en": "chip de seguridad negro sobre una placa verde con un candado grabado",
+  "medidas": [
+   1.4,
+   0.295,
+   1.4
+  ]
+ },
+ "cientifico": {
+  "en": "científico de juguete de cabeza grande con bata blanca y lentes, de frente",
+  "medidas": [
+   0.97,
+   2.35,
+   0.96
+  ]
+ },
+ "cinta_correr": {
+  "en": "cinta de correr de laboratorio a lo largo de x; la banda (banda) se pinta y se desliza; pantalla (pantalla) en la consola",
+  "medidas": [
+   2.79,
+   1.545,
+   1.04
+  ],
+  "partes": [
+   "banda",
+   "pantalla"
+  ]
+ },
+ "coche_azul": {
+  "en": "coche azul de juguete mirando a +x; placas (placa) adelante y atrás",
+  "medidas": [
+   2.253,
+   1.01,
+   1.11
+  ],
+  "partes": [
+   "placa"
+  ]
+ },
+ "coche_con_conductor": {
+  "en": "coche compacto rojo de juguete con vidrios grandes transparentes; adentro, el conductor de cabeza grande (camisa azul, cinturón puesto), asientos y volante. Partes con nombre: rueda_1..4, conductor, ventana (vidrio delantero del lado de la cámara), freno_i, freno_d",
+  "medidas": [
+   2.09,
+   1.715,
+   4.24
+  ],
+  "partes": [
+   "conductor",
+   "freno_d",
+   "freno_i",
+   "medallon",
+   "parabrisas",
+   "rueda_1",
+   "rueda_2",
+   "rueda_3",
+   "rueda_4",
+   "ventana",
+   "ventana_tras",
+   "vidrio_l1",
+   "vidrio_l2"
+  ]
+ },
+ "coche_frente": {
+  "en": "coche compacto rojo brillante con el frente hacia la cámara: faros redondos (faro), parrilla, matrícula, vidrios oscuros (vidrio), llantas plateadas de cinco radios (rueda_1..4); material carroceria para empolvarlo",
+  "medidas": [
+   2.2,
+   1.715,
+   4.26
+  ],
+  "partes": [
+   "medallon",
+   "parabrisas",
+   "rueda_1",
+   "rueda_2",
+   "rueda_3",
+   "rueda_4",
+   "ventana",
+   "ventana_tras"
+  ]
+ },
+ "coche_rojo": {
+  "en": "coche rojo de juguete, nariz hacia +x (se ve de perfil desde el frente); faros (faro) y calaveras (calavera) que brillan",
+  "partes": [
+   "placa"
+  ]
+ },
+ "cohete_viejo": {
+  "en": "cohete soviético viejo gris verdoso con cuatro propulsores cónicos, franjas rojas y manchas de óxido",
+  "medidas": [
+   1.0505,
+   4.245,
+   1.0505
+  ]
+ },
+ "companera": {
+  "en": "compañera de trabajo de juguete de cabeza grande y ojos de punto: blusa verde azulado, pantalón azul marino, zapatos rosas, pelo negro con fleco y cola de caballo, aretes dorados; brazos (brazo_d, brazo_i), piernas (pierna_d, pierna_i) con rodillas (rodilla_d, rodilla_i) para sentarse, cabeza (cabeza) con ojos (ojo_d, ojo_i), cejas (ceja_d, ceja_i) y boca (boca)",
+  "medidas": [
+   0.97,
+   2.369,
+   1.082
+  ],
+  "partes": [
+   "brazo_d",
+   "brazo_i",
+   "boca",
+   "ceja_d",
+   "ceja_i",
+   "ojo_d",
+   "ojo_i",
+   "cabeza",
+   "rodilla_d",
+   "pierna_d",
+   "rodilla_i",
+   "pierna_i"
+  ]
+ },
+ "compu_retro": {
+  "en": "computadora beige de los noventa con monitor de tubo y un CD; la pantalla (pantalla) se puede pintar",
+  "medidas": [
+   1.67,
+   1.3,
+   1.48
+  ],
+  "partes": [
+   "pantalla"
+  ]
+ },
+ "congreso": {
+  "en": "palacio legislativo genérico con escalones, seis columnas, frontón con letrero (letrero), cúpula y bandera (bandera)",
+  "medidas": [
+   2.6,
+   2.65,
+   1.7
+  ],
+  "partes": [
+   "bandera",
+   "fronton",
+   "letrero"
+  ]
+ },
+ "cronometro": {
+  "en": "cronómetro plateado de frente; la carátula (caratula) se pinta y la aguja (aguja) gira",
+  "medidas": [
+   1,
+   1.13,
+   0.18
+  ],
+  "partes": [
+   "aguja",
+   "caratula"
+  ]
+ },
+ "despertador": {
+  "en": "reloj despertador rojo con dos campanas doradas, carátula blanca y agujas (aguja_h, aguja_m)",
+  "medidas": [
+   1.3,
+   1.75,
+   0.47
+  ],
+  "partes": [
+   "aguja_h",
+   "aguja_m"
+  ]
+ },
+ "dunas": {
+  "en": "dunas de arena del desierto",
+  "medidas": [
+   7,
+   1.2,
+   3.2
+  ]
+ },
+ "edificio_ladrillo": {
+  "en": "fachada de ladrillo terracota de tres pisos con ventanas de persianas verdes",
+  "medidas": [
+   2.12,
+   2.68,
+   0.6
+  ]
+ },
+ "edificio_ocre": {
+  "en": "fachada ocre alta y angosta con ventanas de persianas verdes",
+  "medidas": [
+   1.52,
+   3.28,
+   0.6
+  ]
+ },
+ "espada": {
+  "en": "espada de pie con la punta arriba: hoja larga oxidada (material hoja), guarda dorada, mango café",
+  "medidas": [
+   0.62,
+   2.1926,
+   0.15
+  ],
+  "partes": [
+   "hoja"
+  ]
+ },
+ "estufa": {
+  "en": "estufa de cocina de juguete blanca con cuatro quemadores y una flama encendida (flama)",
+  "medidas": [
+   1.22,
+   1.35,
+   0.91
+  ]
+ },
+ "farol": {
+  "en": "farol negro de plaza con luz cálida (luz)",
+  "medidas": [
+   0.4,
+   2.73,
+   0.4
+  ],
+  "partes": [
+   "luz"
+  ]
+ },
+ "foto_marco": {
+  "en": "foto impresa en un marco de pie; la imagen (imagen) se pinta con una cara",
+  "medidas": [
+   1.2,
+   1.6,
+   0.6187
+  ],
+  "partes": [
+   "imagen"
+  ]
+ },
+ "freidora": {
+  "en": "freidora de aire negra con cajón al frente y pantallita (pantalla)",
+  "medidas": [
+   1,
+   1.368,
+   1.04
+  ],
+  "partes": [
+   "pantalla"
+  ]
+ },
+ "freno_disco": {
+  "en": "disco de freno perforado plateado (rotor, material disco) de frente, pinza roja arriba a la derecha (pinza), muelle de suspensión dorado y amortiguador detrás",
+  "medidas": [
+   2.0788,
+   3.5,
+   1.61
+  ],
+  "partes": [
+   "muelle",
+   "pinza",
+   "rotor"
+  ]
+ },
+ "gallina": {
+  "en": "gallina blanca de juguete con cresta roja, pico y patas amarillas, mira a +x; cabeza (cabeza), cuello (cuello) y patas (pata_i, pata_d) se mueven aparte",
+  "medidas": [
+   1.8121,
+   1.5288,
+   0.7581
+  ],
+  "partes": [
+   "cabeza",
+   "cuello",
+   "pata_d",
+   "pata_i"
+  ]
+ },
+ "gato": {
+  "en": "gatito naranja de juguete sentado con orejas puntiagudas, bigotes y cola enroscada (cola); la cabeza (cabeza) gira",
+  "medidas": [
+   1.0293,
+   1.4836,
+   0.869
+  ],
+  "partes": [
+   "cabeza",
+   "cola"
+  ]
+ },
+ "gato_gris": {
+  "en": "gato gris rayado de juguete, ojos verdes, mira a +x; patas (pata_i, pata_d, pata_ti, pata_td)",
+  "medidas": [
+   1.9434,
+   1.345,
+   0.567
+  ],
+  "partes": [
+   "pata_d",
+   "pata_i",
+   "pata_td",
+   "pata_ti"
+  ]
+ },
+ "generador_rayos": {
+  "en": "generador de rayos de laboratorio: columna de anillos de cobre con una esfera metálica arriba (bola)",
+  "medidas": [
+   1.2,
+   3.57,
+   1.2
+  ],
+  "partes": [
+   "bola"
+  ]
+ },
+ "hacker": {
+  "en": "joven de juguete con sudadera negra y la capucha puesta, sostiene un aparatito",
+  "medidas": [
+   0.9964,
+   2.5076,
+   1.1295
+  ]
+ },
+ "invernadero": {
+  "en": "invernadero chiquito de vidrio (vidrio) con marco blanco y una plantita verde en maceta dentro",
+  "medidas": [
+   1.08,
+   1.002,
+   0.88
+  ],
+  "partes": [
+   "techo"
+  ]
+ },
+ "joven_control": {
+  "en": "chavo de juguete con sudadera azul, sostiene un control de videojuego",
+  "medidas": [
+   0.916,
+   2.35,
+   1.08
+  ]
+ },
+ "joven_sudadera": {
+  "en": "persona joven de juguete: sudadera morada con la capucha abajo, jeans, tenis blancos, pelo oscuro despeinado; brazos brazo_d/brazo_i, cejas ceja_d/ceja_i, boca",
+  "medidas": [
+   0.97,
+   2.3718,
+   0.95
+  ],
+  "partes": [
+   "boca",
+   "brazo_d",
+   "brazo_i",
+   "ceja_d",
+   "ceja_i"
+  ]
+ },
+ "lampara_taller": {
+  "en": "lámpara de techo de taller con pantalla verde petróleo y bombilla cálida (bombilla)",
+  "medidas": [
+   1.5,
+   2.65,
+   1.5
+  ]
+ },
+ "lapida": {
+  "en": "lápida gris de piedra con remate redondo sobre una base",
+  "medidas": [
+   1.4,
+   1.7,
+   0.5
+  ],
+  "partes": [
+   "lapida"
+  ]
+ },
+ "laptop": {
+  "en": "laptop abierta; la pantalla (pantalla) se pinta",
+  "medidas": [
+   1.4,
+   0.9412,
+   1.1545
+  ],
+  "partes": [
+   "tapa"
+  ]
+ },
+ "letrero_calle": {
+  "en": "letrero verde de nombre de calle en un poste; la placa (texto) se pinta",
+  "medidas": [
+   1.2,
+   2.31,
+   0.09
+  ],
+  "partes": [
+   "texto"
+  ]
+ },
+ "libro": {
+  "en": "libro gigante de pie y cerrado; la tapa (tapa) se abre desde el lomo y adentro la página (pagina) se pinta",
+  "medidas": [
+   1.44,
+   1.9,
+   0.461
+  ],
+  "partes": [
+   "pagina",
+   "tapa"
+  ]
+ },
+ "lupa": {
+  "en": "lupa de mango café",
+  "medidas": [
+   1.1199,
+   1.3962,
+   0.14
+  ]
+ },
+ "mama": {
+  "en": "mamá de juguete: pelo rizado rojizo con chongo, lentes rosas, blusa rosa con flores, pantalón ciruela, aretes; brazos brazo_d/brazo_i, cejas, boca",
+  "medidas": [
+   1.1,
+   2.62,
+   0.98
+  ],
+  "partes": [
+   "boca",
+   "brazo_d",
+   "brazo_i",
+   "ceja_d",
+   "ceja_i"
+  ]
+ },
+ "manzana": {
+  "en": "manzana roja brillante con rabito café y una hoja verde",
+  "medidas": [
+   1.001,
+   1.0837,
+   1.001
+  ]
+ },
+ "maquina_arcade": {
+  "en": "máquina de arcade genérica azul con costados amarillos, pantalla inclinada (pantalla), palanca y botones",
+  "medidas": [
+   0.92,
+   2.34,
+   0.9
+  ]
+ },
+ "mariposa": {
+  "en": "mariposa naranja con bordes negros; alas ala_i y ala_d",
+  "medidas": [
+   1.7309,
+   0.363,
+   1.2993
+  ],
+  "partes": [
+   "ala_d",
+   "ala_i"
+  ]
+ },
+ "mecanico": {
+  "en": "mecánico de juguete con chaleco naranja y gorra, con una lámpara al frente (lampara)",
+  "medidas": [
+   0.916,
+   2.35,
+   1.335
+  ],
+  "partes": [
+   "lampara"
+  ]
+ },
+ "medidor_amperes": {
+  "en": "medidor redondo de amperes con escala verde-amarillo-rojo, aguja (aguja) y placa (texto)",
+  "medidas": [
+   1.5,
+   1.75,
+   0.3
+  ],
+  "partes": [
+   "aguja",
+   "texto"
+  ]
+ },
+ "medidor_temperatura": {
+  "en": "medidor redondo de temperatura con zonas azul (frio), verde (normal) y roja (caliente) y aguja (aguja)",
+  "medidas": [
+   2.7,
+   2.95,
+   0.6
+  ],
+  "partes": [
+   "aguja"
+  ]
+ },
+ "microfono": {
+  "en": "micrófono de estudio de grabación sobre su pie, con filtro antipop",
+  "medidas": [
+   0.7,
+   2.06,
+   1.0614
+  ]
+ },
+ "molecula_dormida": {
+  "en": "molécula de adenosina de juguete: bolita morada con ojos somnolientos de párpados caídos, gorro de dormir azul con pompón, cejas (ceja_d, ceja_i) y bracitos (brazo_d, brazo_i)",
+  "medidas": [
+   1.29,
+   1.4563,
+   0.93
+  ],
+  "partes": [
+   "brazo_d",
+   "brazo_i",
+   "ceja_d",
+   "ceja_i",
+   "cuerpo",
+   "parpado_d",
+   "parpado_i"
+  ]
+ },
+ "molecula_lentes": {
+  "en": "molécula de cafeína de juguete: bolita café con lentes oscuros, sonrisa pícara, cejas (ceja_d, ceja_i) y bracitos (brazo_d, brazo_i)",
+  "medidas": [
+   1.29,
+   1.002,
+   0.94
+  ],
+  "partes": [
+   "boca",
+   "brazo_d",
+   "brazo_i",
+   "ceja_d",
+   "ceja_i",
+   "cuerpo"
+  ]
+ },
+ "moneda": {
+  "en": "moneda de oro de frente",
+  "medidas": [
+   1,
+   1,
+   0.1238
+  ]
+ },
+ "monedas": {
+  "en": "pilas de monedas de oro"
+ },
+ "mono": {
+  "en": "monito café de juguete con cara clara, ojos grandes con párpados (parpado_d, parpado_i), boca (boca), brazos largos (brazo_d, brazo_i) y cola enroscada (cola)",
+  "medidas": [
+   1.18,
+   1.716,
+   1.0318
+  ],
+  "partes": [
+   "boca",
+   "brazo_d",
+   "brazo_i",
+   "cola",
+   "parpado_d",
+   "parpado_i"
+  ]
+ },
+ "montana_terrazas": {
+  "en": "montaña verde con terrazas de cultivo, estilo andino",
+  "medidas": [
+   3.405,
+   2.85,
+   2.905
+  ]
+ },
+ "mosca": {
+  "en": "mosca gris con ojos rojos y alas transparentes ala_i y ala_d",
+  "medidas": [
+   1.1681,
+   0.7429,
+   0.91
+  ],
+  "partes": [
+   "ala_d",
+   "ala_i"
+  ]
+ },
+ "motor_arranque": {
+  "en": "motor de arranque plateado con solenoide arriba, borne rojo (borne) y piñón a la izquierda",
+  "medidas": [
+   1.83,
+   1.51,
+   0.94
+  ]
+ },
+ "motor_corte": {
+  "en": "motor en corte visto de frente: bloque azul grisáceo, pistón plateado (piston), biela (biela), cigüeñal (ciguenal), cárter con aceite naranja (aceite), conducto lateral (conducto) con una gota de aceite (gota) y escarcha (escarcha)",
+  "medidas": [
+   3.79,
+   5.5,
+   1.75
+  ],
+  "partes": [
+   "biela",
+   "ciguenal",
+   "escarcha",
+   "gota",
+   "piston"
+  ]
+ },
+ "mujer_vestido_rojo": {
+  "en": "mujer de juguete con melena negra y vestido rojo",
+  "medidas": [
+   1,
+   2.3892,
+   1.02
+  ]
+ },
+ "nube_tormenta": {
+  "en": "nube de tormenta gris esponjosa con la panza plana y oscura (nube)",
+  "medidas": [
+   4.6,
+   1.98,
+   1.895
+  ]
+ },
+ "oficinista": {
+  "en": "oficinista de juguete de cabeza grande y ojos de punto: camisa azul clara, corbata roja, pluma en la bolsa, pantalón gris, zapatos cafés, pelo castaño peinado; brazos (brazo_d, brazo_i), piernas (pierna_d, pierna_i) con rodillas (rodilla_d, rodilla_i) para sentarse, cabeza (cabeza) con ojos (ojo_d, ojo_i), cejas (ceja_d, ceja_i), boca (boca) y casco amarillo de obra (casco, escálalo a 0 para quitarlo)",
+  "medidas": [
+   1.12,
+   2.39,
+   1.12
+  ],
+  "partes": [
+   "brazo_d",
+   "brazo_i",
+   "boca",
+   "casco",
+   "ceja_d",
+   "ceja_i",
+   "ojo_d",
+   "ojo_i",
+   "cabeza",
+   "rodilla_d",
+   "pierna_d",
+   "rodilla_i",
+   "pierna_i"
+  ]
+ },
+ "ojo": {
+  "en": "ojo humano grande de frente; el iris (iris) gira para mirar a los lados",
+  "medidas": [
+   1,
+   1,
+   1.036
+  ],
+  "partes": [
+   "iris"
+  ]
+ },
+ "oreja": {
+  "en": "oreja gigante rosa de frente",
+  "medidas": [
+   1.1,
+   1.46,
+   0.424
+  ]
+ },
+ "palmera": {
+  "en": "palmera con tronco curvo y hojas verdes",
+  "medidas": [
+   2.8411,
+   3.3024,
+   2.9124
+  ]
+ },
+ "paloma": {
+  "en": "paloma de juguete gris, cuello verde y morado, ojo naranja, patas rosas, mira a +x; la cabeza (cabeza) se desliza sola, el cuello (cuello) se estira y las patas (pata_i, pata_d) giran en la cadera",
+  "medidas": [
+   1.8315,
+   1.4018,
+   0.69
+  ],
+  "partes": [
+   "cabeza",
+   "cuello",
+   "pata_d",
+   "pata_i"
+  ]
+ },
+ "panel_capas": {
+  "en": "panel de avión en tres capas: fibra de carbono (fibra), malla de cobre (malla) y pintura blanca (pintura)",
+  "medidas": [
+   1.6,
+   0.17,
+   1.015
+  ],
+  "partes": [
+   "fibra",
+   "malla",
+   "pintura"
+  ]
+ },
+ "pared_garaje": {
+  "en": "pared de garaje azul petróleo: estanterías con botes de pintura a la izquierda, tablero de herramientas a la derecha y ventana arriba al centro (cielo)",
+  "medidas": [
+   9,
+   5,
+   0.755
+  ]
+ },
+ "pasajero": {
+  "en": "pasajero de juguete sentado en un asiento azul con un café en las manos (cafe)",
+  "medidas": [
+   1.1,
+   2.16,
+   1.28
+  ],
+  "partes": [
+   "cafe"
+  ]
+ },
+ "patrulla": {
+  "en": "patrulla de juguete; la carrocería (carroceria) y las puertas (puertas) se pueden repintar; sirenas azul y roja",
+  "medidas": [
+   1.15,
+   1.08,
+   2.228
+  ],
+  "partes": [
+   "sirena_azul",
+   "sirena_roja"
+  ]
+ },
+ "pecera": {
+  "en": "pecera de vidrio (vidrio) con agua (agua), grava, una planta y un pez naranja (pez)",
+  "medidas": [
+   1.56,
+   1.03,
+   0.76
+  ],
+  "partes": [
+   "pez"
+  ]
+ },
+ "periodico": {
+  "en": "periódico doblado, de pie; la portada (portada) se pinta",
+  "medidas": [
+   1,
+   1.325,
+   0.071
+  ],
+  "partes": [
+   "portada"
+  ]
+ },
+ "perro": {
+  "en": "perrito color crema de juguete sentado con orejas cafés caídas, lengua de fuera, collar rojo y cola (cola); la cabeza (cabeza) gira",
+  "medidas": [
+   0.8747,
+   1.343,
+   1.138
+  ],
+  "partes": [
+   "cabeza",
+   "cola"
+  ]
+ },
+ "persona_amarilla": {
+  "en": "persona de juguete de cabeza grande con camiseta amarilla, de frente",
+  "medidas": [
+   0.97,
+   2.35,
+   0.96
+  ]
+ },
+ "persona_blusa_rosa": {
+  "en": "persona de juguete de cabeza grande con melena y blusa rosa"
+ },
+ "persona_camisa_azul": {
+  "en": "persona de juguete de cabeza grande con camisa azul"
+ },
+ "persona_camisa_verde": {
+  "en": "persona de juguete de cabeza grande con camisa verde"
+ },
+ "piloto": {
+  "en": "piloto de juguete con saco azul marino, gorra y micrófono de diadema (micro)",
+  "medidas": [
+   0.98,
+   2.35,
+   1.02
+  ],
+  "partes": [
+   "micro"
+  ]
+ },
+ "pin_ubicacion": {
+  "en": "pin rojo de ubicación",
+  "medidas": [
+   0.44,
+   0.8,
+   0.44
+  ]
+ },
+ "pixel_espia": {
+  "en": "pixel espía: cubito de neón rosa con sombrero y ojos (ojos)",
+  "medidas": [
+   0.84,
+   0.88,
+   0.84
+  ],
+  "partes": [
+   "ojos"
+  ]
+ },
+ "placa_circuito": {
+  "en": "placa de circuito verde con chips negros, pistas doradas y leds verdes (led)",
+  "medidas": [
+   1.6,
+   1.1,
+   0.24
+  ]
+ },
+ "plato_espagueti": {
+  "en": "plato blanco de espagueti con salsa roja, tres albóndigas y una hoja de albahaca",
+  "medidas": [
+   1.44,
+   0.5536,
+   1.44
+  ],
+  "partes": [
+   "plato"
+  ]
+ },
+ "pluma": {
+  "en": "pluma fuente negra con dorado, a lo largo de la vertical, punta (punta) arriba",
+  "medidas": [
+   0.149,
+   1.02,
+   0.128
+  ]
+ },
+ "programador": {
+  "en": "programador de juguete con lentes y camisa verde",
+  "medidas": [
+   0.97,
+   2.35,
+   0.96
+  ]
+ },
+ "puerta": {
+  "en": "puerta de madera con marco oscuro y perilla dorada; la hoja gira en la bisagra izquierda (hoja)",
+  "medidas": [
+   1.36,
+   2.42,
+   0.26
+  ],
+  "partes": [
+   "hoja"
+  ]
+ },
+ "rayo": {
+  "en": "rayo amarillo brillante en zigzag de unos 3 de alto, con una rama (rayo)",
+  "medidas": [
+   0.9588,
+   3.099,
+   0.14
+  ]
+ },
+ "reloj_arena": {
+  "en": "reloj de arena de madera",
+  "medidas": [
+   0.9,
+   1.6,
+   0.9
+  ]
+ },
+ "robot": {
+  "en": "robot de juguete: cabeza blanca enorme con pantalla oscura por cara, ojos de punto cian (ojo_d, ojo_i), cejas (ceja_d, ceja_i), boca (boca), antena rosa (antena), bracitos (brazo_d, brazo_i) y piernitas con zapatos cian",
+  "medidas": [
+   1.2,
+   2.315,
+   0.8662
+  ],
+  "partes": [
+   "antena",
+   "boca",
+   "brazo_d",
+   "brazo_i",
+   "ceja_d",
+   "ceja_i",
+   "ojo_d",
+   "ojo_i",
+   "pantalla"
+  ]
+ },
+ "router": {
+  "en": "router de wifi blanco con tres antenas y luces",
+  "medidas": [
+   1.1,
+   0.8318,
+   0.64
+  ]
+ },
+ "rueda": {
+  "en": "primer plano de una rueda de coche rojo vista de lado: neumático negro (goma), llanta plateada de cinco radios (llanta), giro con origen en el eje, arco de la carrocería roja arriba",
+  "medidas": [
+   3.4,
+   2.38,
+   0.9617
+  ],
+  "partes": [
+   "giro"
+  ]
+ },
+ "satelite": {
+  "en": "satélite dorado con paneles solares azules",
+  "medidas": [
+   2.8,
+   0.955,
+   0.5
+  ]
+ },
+ "sello": {
+  "en": "sello de goma con mango de madera; la goma (goma) es roja",
+  "medidas": [
+   0.6,
+   0.93,
+   0.4
+  ],
+  "partes": [
+   "goma"
+  ]
+ },
+ "semaforo": {
+  "en": "semáforo con la luz roja encendida (roja, ambar, verde)",
+  "medidas": [
+   1,
+   5.15,
+   1.24
+  ]
+ },
+ "senor": {
+  "en": "señor de juguete: calvo con canas a los lados, bigote grande, lentes oscuros, camisa verde, cadena de oro, panza; brazos brazo_d/brazo_i, cejas, boca",
+  "medidas": [
+   1.0756,
+   2.341,
+   0.93
+  ],
+  "partes": [
+   "boca",
+   "brazo_d",
+   "brazo_i",
+   "ceja_d",
+   "ceja_i"
+  ]
+ },
+ "silla_acolchada": {
+  "en": "silla acolchada azul cian (material asiento)",
+  "medidas": [
+   0.92,
+   1.3205,
+   0.9151
+  ]
+ },
+ "silla_madera": {
+  "en": "silla de madera sencilla de cocina con respaldo de tres tablitas",
+  "medidas": [
+   0.62,
+   1.32,
+   0.58
+  ]
+ },
+ "silla_oficina": {
+  "en": "silla de oficina de juguete: cojines azules, base negra de estrella con cinco rueditas, tubo negro del pistón de gas (cilindro), vástago cromado (vastago), asiento con respaldo y brazos (asiento) y palanquita de altura (palanca)",
+  "medidas": [
+   1.432,
+   2.006,
+   1.362
+  ],
+  "partes": [
+   "asiento",
+   "base",
+   "cilindro",
+   "palanca",
+   "vastago"
+  ]
+ },
+ "silla_plegable": {
+  "en": "silla plegable de campamento roja",
+  "medidas": [
+   0.764,
+   1.1499,
+   0.7156
+  ]
+ },
+ "sirena": {
+  "en": "sirena de alarma pequeña con domo naranja (luz) sobre base oscura",
+  "medidas": [
+   1,
+   0.92,
+   1
+  ]
+ },
+ "sol": {
+  "en": "sol de juguete naranja brillante con rayos y cara sonriente",
+  "medidas": [
+   2.36,
+   2.36,
+   1.5
+  ]
+ },
+ "sombrero_paja": {
+  "en": "sombrero ancho de paja con banda roja, de la época de la Revolución",
+  "medidas": [
+   1.62,
+   0.68,
+   1.62
+  ]
+ },
+ "sueter_cobre": {
+  "en": "suéter tejido de cobre brillante",
+  "medidas": [
+   2.2967,
+   1.2476,
+   0.5
+  ]
+ },
+ "sueter_colgado": {
+  "en": "suéter negro de cuello alto colgado de un gancho de madera",
+  "medidas": [
+   1.3457,
+   1.192,
+   0.26
+  ],
+  "partes": [
+   "sueter"
+  ]
+ },
+ "taza": {
+  "en": "taza blanca con café y plato",
+  "medidas": [
+   0.587,
+   0.33,
+   0.56
+  ]
+ },
+ "taza_cafe": {
+  "en": "taza de café de cerámica crema con franja roja, sobre su plato; café oscuro con crema dentro (liquido, escala y = nivel)",
+  "medidas": [
+   1.8,
+   1.17,
+   1.8
+  ],
+  "partes": [
+   "franja",
+   "liquido",
+   "plato",
+   "vaso"
+  ]
+ },
+ "tele": {
+  "en": "tele plana sobre un mueble con una consola blanca; la pantalla (pantalla) se puede pintar",
+  "medidas": [
+   2.2,
+   1.75,
+   0.63
+  ],
+  "partes": [
+   "pantalla"
+  ]
+ },
+ "telefono_teclado": {
+  "en": "teléfono viejo negro con pantallita (pantalla) y teclado completo de botoncitos",
+  "medidas": [
+   0.68,
+   1.1,
+   0.165
+  ],
+  "partes": [
+   "pantalla"
+  ]
+ },
+ "termometro": {
+  "en": "termómetro alto de vidrio con bulbo rojo y columna roja (mercurio)",
+  "medidas": [
+   0.44,
+   2.43,
+   0.4
+  ],
+  "partes": [
+   "mercurio"
+  ]
+ },
+ "tienda": {
+  "en": "tienda de juguete con toldo a rayas y letrero (letrero)",
+  "medidas": [
+   2.06,
+   1.61,
+   1.4371
+  ],
+  "partes": [
+   "letrero"
+  ]
+ },
+ "torre_reloj": {
+  "en": "torre del reloj junto a un edificio gótico",
+  "medidas": [
+   3.41,
+   5.15,
+   1.31
+  ]
+ },
+ "tostador": {
+  "en": "tostador cromado de juguete con dos panes en las ranuras (pan)",
+  "medidas": [
+   1.28,
+   1.19,
+   0.7
+  ],
+  "partes": [
+   "pan"
+  ]
+ },
+ "trofeo": {
+  "en": "trofeo de copa dorada con dos asas sobre una base negra",
+  "medidas": [
+   1.3,
+   1.3,
+   0.92
+  ],
+  "partes": [
+   "copa"
+  ]
+ },
+ "tuneladora": {
+  "en": "máquina tuneladora blanca con cabeza cortadora dorada al frente (cabeza, gira en su eje) y cabina arriba",
+  "medidas": [
+   2.04,
+   2.32,
+   3.78
+  ],
+  "partes": [
+   "cabeza"
+  ]
+ },
+ "urna": {
+  "en": "urna electoral blanca con ranura y una boleta asomando; el frente (frente) se pinta",
+  "medidas": [
+   0.9,
+   0.91,
+   0.711
+  ],
+  "partes": [
+   "frente"
+  ]
+ },
+ "velero": {
+  "en": "velero de madera de juguete con dos mástiles y velas crema; el camarote de popa está abierto del lado de la cámara y tiene farol, mesita y pecera",
+  "medidas": [
+   1.95,
+   4.4,
+   4.7141
+  ],
+  "partes": [
+   "bandera",
+   "casco",
+   "prisma",
+   "vela"
+  ]
+ },
+ "ventana_tren": {
+  "en": "pared interior de un vagón de tren con una ventanilla abierta; detrás se pone el paisaje",
+  "medidas": [
+   4.8,
+   3,
+   0.39
+  ]
+ },
+ "volante": {
+  "en": "volante negro de tres radios (aro, origen al centro)",
+  "medidas": [
+   2.02,
+   2.02,
+   0.2246
+  ],
+  "partes": [
+   "aro"
+  ]
+ }
+}

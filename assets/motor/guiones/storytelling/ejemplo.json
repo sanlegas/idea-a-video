@@ -1,0 +1,1532 @@
+{
+ "nombre": "ejemplo",
+ "duracion": 64.8,
+ "look": "papel",
+ "palabras": [
+  {
+   "word": "Vas",
+   "line": 0,
+   "start": 0.15,
+   "end": 0.385
+  },
+  {
+   "word": "entrando",
+   "line": 0,
+   "start": 0.405,
+   "end": 0.865
+  },
+  {
+   "word": "a",
+   "line": 0,
+   "start": 0.885,
+   "end": 1.03
+  },
+  {
+   "word": "la",
+   "line": 0,
+   "start": 1.05,
+   "end": 1.24
+  },
+  {
+   "word": "junta,",
+   "line": 0,
+   "start": 1.26,
+   "end": 1.63
+  },
+  {
+   "word": "con",
+   "line": 0,
+   "start": 1.77,
+   "end": 2.005
+  },
+  {
+   "word": "el",
+   "line": 0,
+   "start": 2.025,
+   "end": 2.215
+  },
+  {
+   "word": "café",
+   "line": 0,
+   "start": 2.235,
+   "end": 2.515
+  },
+  {
+   "word": "en",
+   "line": 0,
+   "start": 2.535,
+   "end": 2.725
+  },
+  {
+   "word": "la",
+   "line": 0,
+   "start": 2.745,
+   "end": 2.935
+  },
+  {
+   "word": "mano,",
+   "line": 0,
+   "start": 2.955,
+   "end": 3.28
+  },
+  {
+   "word": "y",
+   "line": 0,
+   "start": 3.42,
+   "end": 3.565
+  },
+  {
+   "word": "te",
+   "line": 0,
+   "start": 3.585,
+   "end": 3.775
+  },
+  {
+   "word": "tropiezas",
+   "line": 0,
+   "start": 3.795,
+   "end": 4.3
+  },
+  {
+   "word": "con",
+   "line": 0,
+   "start": 4.32,
+   "end": 4.555
+  },
+  {
+   "word": "el",
+   "line": 0,
+   "start": 4.575,
+   "end": 4.765
+  },
+  {
+   "word": "cable.",
+   "line": 0,
+   "start": 4.785,
+   "end": 5.155
+  },
+  {
+   "word": "El",
+   "line": 1,
+   "start": 5.475,
+   "end": 5.665
+  },
+  {
+   "word": "café",
+   "line": 1,
+   "start": 5.685,
+   "end": 5.965
+  },
+  {
+   "word": "vuela.",
+   "line": 1,
+   "start": 5.985,
+   "end": 6.355
+  },
+  {
+   "word": "Tu",
+   "line": 2,
+   "start": 6.675,
+   "end": 6.865
+  },
+  {
+   "word": "camisa",
+   "line": 2,
+   "start": 6.885,
+   "end": 7.255
+  },
+  {
+   "word": "blanca",
+   "line": 2,
+   "start": 7.275,
+   "end": 7.645
+  },
+  {
+   "word": "ya",
+   "line": 2,
+   "start": 7.665,
+   "end": 7.855
+  },
+  {
+   "word": "no",
+   "line": 2,
+   "start": 7.875,
+   "end": 8.065
+  },
+  {
+   "word": "es",
+   "line": 2,
+   "start": 8.085,
+   "end": 8.275
+  },
+  {
+   "word": "blanca.",
+   "line": 2,
+   "start": 8.295,
+   "end": 8.71
+  },
+  {
+   "word": "Y",
+   "line": 3,
+   "start": 9.03,
+   "end": 9.175
+  },
+  {
+   "word": "sientes",
+   "line": 3,
+   "start": 9.195,
+   "end": 9.61
+  },
+  {
+   "word": "que",
+   "line": 3,
+   "start": 9.63,
+   "end": 9.865
+  },
+  {
+   "word": "las",
+   "line": 3,
+   "start": 9.885,
+   "end": 10.12
+  },
+  {
+   "word": "veinte",
+   "line": 3,
+   "start": 10.14,
+   "end": 10.51
+  },
+  {
+   "word": "personas",
+   "line": 3,
+   "start": 10.53,
+   "end": 10.99
+  },
+  {
+   "word": "de",
+   "line": 3,
+   "start": 11.01,
+   "end": 11.2
+  },
+  {
+   "word": "la",
+   "line": 3,
+   "start": 11.22,
+   "end": 11.41
+  },
+  {
+   "word": "sala",
+   "line": 3,
+   "start": 11.43,
+   "end": 11.71
+  },
+  {
+   "word": "te",
+   "line": 3,
+   "start": 11.73,
+   "end": 11.92
+  },
+  {
+   "word": "están",
+   "line": 3,
+   "start": 11.94,
+   "end": 12.265
+  },
+  {
+   "word": "mirando",
+   "line": 3,
+   "start": 12.285,
+   "end": 12.7
+  },
+  {
+   "word": "solo",
+   "line": 3,
+   "start": 12.72,
+   "end": 13
+  },
+  {
+   "word": "a",
+   "line": 3,
+   "start": 13.02,
+   "end": 13.165
+  },
+  {
+   "word": "ti.",
+   "line": 3,
+   "start": 13.185,
+   "end": 13.42
+  },
+  {
+   "word": "Eso",
+   "line": 4,
+   "start": 13.74,
+   "end": 13.975
+  },
+  {
+   "word": "que",
+   "line": 4,
+   "start": 13.995,
+   "end": 14.23
+  },
+  {
+   "word": "sientes",
+   "line": 4,
+   "start": 14.25,
+   "end": 14.665
+  },
+  {
+   "word": "tiene",
+   "line": 4,
+   "start": 14.685,
+   "end": 15.01
+  },
+  {
+   "word": "nombre:",
+   "line": 4,
+   "start": 15.03,
+   "end": 15.445
+  },
+  {
+   "word": "el",
+   "line": 4,
+   "start": 15.585,
+   "end": 15.775
+  },
+  {
+   "word": "efecto",
+   "line": 4,
+   "start": 15.795,
+   "end": 16.165
+  },
+  {
+   "word": "reflector.",
+   "line": 4,
+   "start": 16.185,
+   "end": 16.735
+  },
+  {
+   "word": "En",
+   "line": 5,
+   "start": 17.055,
+   "end": 17.245
+  },
+  {
+   "word": "el",
+   "line": 5,
+   "start": 17.265,
+   "end": 17.455
+  },
+  {
+   "word": "año",
+   "line": 5,
+   "start": 17.475,
+   "end": 17.71
+  },
+  {
+   "word": "dos",
+   "line": 5,
+   "start": 17.73,
+   "end": 17.965
+  },
+  {
+   "word": "mil,",
+   "line": 5,
+   "start": 17.985,
+   "end": 18.265
+  },
+  {
+   "word": "el",
+   "line": 5,
+   "start": 18.405,
+   "end": 18.595
+  },
+  {
+   "word": "psicólogo",
+   "line": 5,
+   "start": 18.615,
+   "end": 19.12
+  },
+  {
+   "word": "Thomas",
+   "line": 5,
+   "start": 19.14,
+   "end": 19.51
+  },
+  {
+   "word": "Gilovich",
+   "line": 5,
+   "start": 19.53,
+   "end": 19.99
+  },
+  {
+   "word": "lo",
+   "line": 5,
+   "start": 20.01,
+   "end": 20.2
+  },
+  {
+   "word": "puso",
+   "line": 5,
+   "start": 20.22,
+   "end": 20.5
+  },
+  {
+   "word": "a",
+   "line": 5,
+   "start": 20.52,
+   "end": 20.665
+  },
+  {
+   "word": "prueba.",
+   "line": 5,
+   "start": 20.685,
+   "end": 21.1
+  },
+  {
+   "word": "Pidió",
+   "line": 6,
+   "start": 21.42,
+   "end": 21.745
+  },
+  {
+   "word": "a",
+   "line": 6,
+   "start": 21.765,
+   "end": 21.91
+  },
+  {
+   "word": "unos",
+   "line": 6,
+   "start": 21.93,
+   "end": 22.21
+  },
+  {
+   "word": "estudiantes",
+   "line": 6,
+   "start": 22.23,
+   "end": 22.825
+  },
+  {
+   "word": "entrar",
+   "line": 6,
+   "start": 22.845,
+   "end": 23.215
+  },
+  {
+   "word": "a",
+   "line": 6,
+   "start": 23.235,
+   "end": 23.38
+  },
+  {
+   "word": "un",
+   "line": 6,
+   "start": 23.4,
+   "end": 23.59
+  },
+  {
+   "word": "salón",
+   "line": 6,
+   "start": 23.61,
+   "end": 23.935
+  },
+  {
+   "word": "lleno",
+   "line": 6,
+   "start": 23.955,
+   "end": 24.28
+  },
+  {
+   "word": "con",
+   "line": 6,
+   "start": 24.3,
+   "end": 24.535
+  },
+  {
+   "word": "una",
+   "line": 6,
+   "start": 24.555,
+   "end": 24.79
+  },
+  {
+   "word": "camiseta",
+   "line": 6,
+   "start": 24.81,
+   "end": 25.27
+  },
+  {
+   "word": "vergonzosa.",
+   "line": 6,
+   "start": 25.29,
+   "end": 25.885
+  },
+  {
+   "word": "Ellos",
+   "line": 7,
+   "start": 26.205,
+   "end": 26.53
+  },
+  {
+   "word": "calcularon",
+   "line": 7,
+   "start": 26.55,
+   "end": 27.1
+  },
+  {
+   "word": "que",
+   "line": 7,
+   "start": 27.12,
+   "end": 27.355
+  },
+  {
+   "word": "la",
+   "line": 7,
+   "start": 27.375,
+   "end": 27.565
+  },
+  {
+   "word": "mitad",
+   "line": 7,
+   "start": 27.585,
+   "end": 27.91
+  },
+  {
+   "word": "del",
+   "line": 7,
+   "start": 27.93,
+   "end": 28.165
+  },
+  {
+   "word": "salón",
+   "line": 7,
+   "start": 28.185,
+   "end": 28.51
+  },
+  {
+   "word": "se",
+   "line": 7,
+   "start": 28.53,
+   "end": 28.72
+  },
+  {
+   "word": "había",
+   "line": 7,
+   "start": 28.74,
+   "end": 29.065
+  },
+  {
+   "word": "fijado",
+   "line": 7,
+   "start": 29.085,
+   "end": 29.455
+  },
+  {
+   "word": "en",
+   "line": 7,
+   "start": 29.475,
+   "end": 29.665
+  },
+  {
+   "word": "la",
+   "line": 7,
+   "start": 29.685,
+   "end": 29.875
+  },
+  {
+   "word": "camiseta.",
+   "line": 7,
+   "start": 29.895,
+   "end": 30.4
+  },
+  {
+   "word": "En",
+   "line": 8,
+   "start": 30.72,
+   "end": 30.91
+  },
+  {
+   "word": "realidad,",
+   "line": 8,
+   "start": 30.93,
+   "end": 31.435
+  },
+  {
+   "word": "la",
+   "line": 8,
+   "start": 31.575,
+   "end": 31.765
+  },
+  {
+   "word": "recordó",
+   "line": 8,
+   "start": 31.785,
+   "end": 32.2
+  },
+  {
+   "word": "más",
+   "line": 8,
+   "start": 32.22,
+   "end": 32.455
+  },
+  {
+   "word": "o",
+   "line": 8,
+   "start": 32.475,
+   "end": 32.62
+  },
+  {
+   "word": "menos",
+   "line": 8,
+   "start": 32.64,
+   "end": 32.965
+  },
+  {
+   "word": "una",
+   "line": 8,
+   "start": 32.985,
+   "end": 33.22
+  },
+  {
+   "word": "de",
+   "line": 8,
+   "start": 33.24,
+   "end": 33.43
+  },
+  {
+   "word": "cada",
+   "line": 8,
+   "start": 33.45,
+   "end": 33.73
+  },
+  {
+   "word": "cuatro",
+   "line": 8,
+   "start": 33.75,
+   "end": 34.12
+  },
+  {
+   "word": "personas.",
+   "line": 8,
+   "start": 34.14,
+   "end": 34.645
+  },
+  {
+   "word": "¿Por",
+   "line": 9,
+   "start": 34.965,
+   "end": 35.245
+  },
+  {
+   "word": "qué?",
+   "line": 9,
+   "start": 35.265,
+   "end": 35.545
+  },
+  {
+   "word": "Porque",
+   "line": 10,
+   "start": 35.865,
+   "end": 36.235
+  },
+  {
+   "word": "tu",
+   "line": 10,
+   "start": 36.255,
+   "end": 36.445
+  },
+  {
+   "word": "cerebro",
+   "line": 10,
+   "start": 36.465,
+   "end": 36.88
+  },
+  {
+   "word": "vive",
+   "line": 10,
+   "start": 36.9,
+   "end": 37.18
+  },
+  {
+   "word": "dentro",
+   "line": 10,
+   "start": 37.2,
+   "end": 37.57
+  },
+  {
+   "word": "de",
+   "line": 10,
+   "start": 37.59,
+   "end": 37.78
+  },
+  {
+   "word": "ti.",
+   "line": 10,
+   "start": 37.8,
+   "end": 38.035
+  },
+  {
+   "word": "Tú",
+   "line": 11,
+   "start": 38.355,
+   "end": 38.545
+  },
+  {
+   "word": "ves",
+   "line": 11,
+   "start": 38.565,
+   "end": 38.8
+  },
+  {
+   "word": "tu",
+   "line": 11,
+   "start": 38.82,
+   "end": 39.01
+  },
+  {
+   "word": "mancha",
+   "line": 11,
+   "start": 39.03,
+   "end": 39.4
+  },
+  {
+   "word": "todo",
+   "line": 11,
+   "start": 39.42,
+   "end": 39.7
+  },
+  {
+   "word": "el",
+   "line": 11,
+   "start": 39.72,
+   "end": 39.91
+  },
+  {
+   "word": "día,",
+   "line": 11,
+   "start": 39.93,
+   "end": 40.21
+  },
+  {
+   "word": "así",
+   "line": 11,
+   "start": 40.35,
+   "end": 40.585
+  },
+  {
+   "word": "que",
+   "line": 11,
+   "start": 40.605,
+   "end": 40.84
+  },
+  {
+   "word": "crees",
+   "line": 11,
+   "start": 40.86,
+   "end": 41.185
+  },
+  {
+   "word": "que",
+   "line": 11,
+   "start": 41.205,
+   "end": 41.44
+  },
+  {
+   "word": "todos",
+   "line": 11,
+   "start": 41.46,
+   "end": 41.785
+  },
+  {
+   "word": "la",
+   "line": 11,
+   "start": 41.805,
+   "end": 41.995
+  },
+  {
+   "word": "ven.",
+   "line": 11,
+   "start": 42.015,
+   "end": 42.295
+  },
+  {
+   "word": "Piensa",
+   "line": 12,
+   "start": 42.615,
+   "end": 42.985
+  },
+  {
+   "word": "en",
+   "line": 12,
+   "start": 43.005,
+   "end": 43.195
+  },
+  {
+   "word": "la",
+   "line": 12,
+   "start": 43.215,
+   "end": 43.405
+  },
+  {
+   "word": "última",
+   "line": 12,
+   "start": 43.425,
+   "end": 43.795
+  },
+  {
+   "word": "vez",
+   "line": 12,
+   "start": 43.815,
+   "end": 44.05
+  },
+  {
+   "word": "que",
+   "line": 12,
+   "start": 44.07,
+   "end": 44.305
+  },
+  {
+   "word": "alguien",
+   "line": 12,
+   "start": 44.325,
+   "end": 44.74
+  },
+  {
+   "word": "más",
+   "line": 12,
+   "start": 44.76,
+   "end": 44.995
+  },
+  {
+   "word": "tiró",
+   "line": 12,
+   "start": 45.015,
+   "end": 45.295
+  },
+  {
+   "word": "algo,",
+   "line": 12,
+   "start": 45.315,
+   "end": 45.64
+  },
+  {
+   "word": "se",
+   "line": 12,
+   "start": 45.78,
+   "end": 45.97
+  },
+  {
+   "word": "trabó",
+   "line": 12,
+   "start": 45.99,
+   "end": 46.315
+  },
+  {
+   "word": "al",
+   "line": 12,
+   "start": 46.335,
+   "end": 46.525
+  },
+  {
+   "word": "hablar",
+   "line": 12,
+   "start": 46.545,
+   "end": 46.915
+  },
+  {
+   "word": "o",
+   "line": 12,
+   "start": 46.935,
+   "end": 47.08
+  },
+  {
+   "word": "llegó",
+   "line": 12,
+   "start": 47.1,
+   "end": 47.425
+  },
+  {
+   "word": "despeinado.",
+   "line": 12,
+   "start": 47.445,
+   "end": 48.04
+  },
+  {
+   "word": "¿Te",
+   "line": 13,
+   "start": 48.36,
+   "end": 48.595
+  },
+  {
+   "word": "acuerdas?",
+   "line": 13,
+   "start": 48.615,
+   "end": 49.12
+  },
+  {
+   "word": "Exacto.",
+   "line": 14,
+   "start": 49.44,
+   "end": 49.855
+  },
+  {
+   "word": "Pero",
+   "line": 15,
+   "start": 50.175,
+   "end": 50.455
+  },
+  {
+   "word": "aquí",
+   "line": 15,
+   "start": 50.475,
+   "end": 50.755
+  },
+  {
+   "word": "viene",
+   "line": 15,
+   "start": 50.775,
+   "end": 51.1
+  },
+  {
+   "word": "lo",
+   "line": 15,
+   "start": 51.12,
+   "end": 51.31
+  },
+  {
+   "word": "bueno:",
+   "line": 15,
+   "start": 51.33,
+   "end": 51.7
+  },
+  {
+   "word": "si",
+   "line": 15,
+   "start": 51.84,
+   "end": 52.03
+  },
+  {
+   "word": "nadie",
+   "line": 15,
+   "start": 52.05,
+   "end": 52.375
+  },
+  {
+   "word": "te",
+   "line": 15,
+   "start": 52.395,
+   "end": 52.585
+  },
+  {
+   "word": "mira",
+   "line": 15,
+   "start": 52.605,
+   "end": 52.885
+  },
+  {
+   "word": "tanto,",
+   "line": 15,
+   "start": 52.905,
+   "end": 53.275
+  },
+  {
+   "word": "eres",
+   "line": 15,
+   "start": 53.415,
+   "end": 53.695
+  },
+  {
+   "word": "libre.",
+   "line": 15,
+   "start": 53.715,
+   "end": 54.085
+  },
+  {
+   "word": "Así",
+   "line": 16,
+   "start": 54.405,
+   "end": 54.64
+  },
+  {
+   "word": "que",
+   "line": 16,
+   "start": 54.66,
+   "end": 54.895
+  },
+  {
+   "word": "la",
+   "line": 16,
+   "start": 54.915,
+   "end": 55.105
+  },
+  {
+   "word": "próxima",
+   "line": 16,
+   "start": 55.125,
+   "end": 55.54
+  },
+  {
+   "word": "vez,",
+   "line": 16,
+   "start": 55.56,
+   "end": 55.84
+  },
+  {
+   "word": "haz",
+   "line": 16,
+   "start": 55.98,
+   "end": 56.215
+  },
+  {
+   "word": "la",
+   "line": 16,
+   "start": 56.235,
+   "end": 56.425
+  },
+  {
+   "word": "pregunta,",
+   "line": 16,
+   "start": 56.445,
+   "end": 56.95
+  },
+  {
+   "word": "cuenta",
+   "line": 16,
+   "start": 57.09,
+   "end": 57.46
+  },
+  {
+   "word": "el",
+   "line": 16,
+   "start": 57.48,
+   "end": 57.67
+  },
+  {
+   "word": "chiste,",
+   "line": 16,
+   "start": 57.69,
+   "end": 58.105
+  },
+  {
+   "word": "ponte",
+   "line": 16,
+   "start": 58.245,
+   "end": 58.57
+  },
+  {
+   "word": "esa",
+   "line": 16,
+   "start": 58.59,
+   "end": 58.825
+  },
+  {
+   "word": "camisa.",
+   "line": 16,
+   "start": 58.845,
+   "end": 59.26
+  },
+  {
+   "word": "El",
+   "line": 17,
+   "start": 59.58,
+   "end": 59.77
+  },
+  {
+   "word": "reflector",
+   "line": 17,
+   "start": 59.79,
+   "end": 60.295
+  },
+  {
+   "word": "que",
+   "line": 17,
+   "start": 60.315,
+   "end": 60.55
+  },
+  {
+   "word": "sientes",
+   "line": 17,
+   "start": 60.57,
+   "end": 60.985
+  },
+  {
+   "word": "encima",
+   "line": 17,
+   "start": 61.005,
+   "end": 61.375
+  },
+  {
+   "word": "lo",
+   "line": 17,
+   "start": 61.395,
+   "end": 61.585
+  },
+  {
+   "word": "prendiste",
+   "line": 17,
+   "start": 61.605,
+   "end": 62.11
+  },
+  {
+   "word": "tú.",
+   "line": 17,
+   "start": 62.13,
+   "end": 62.365
+  },
+  {
+   "word": "Y",
+   "line": 18,
+   "start": 62.685,
+   "end": 62.83
+  },
+  {
+   "word": "tú",
+   "line": 18,
+   "start": 62.85,
+   "end": 63.04
+  },
+  {
+   "word": "lo",
+   "line": 18,
+   "start": 63.06,
+   "end": 63.25
+  },
+  {
+   "word": "puedes",
+   "line": 18,
+   "start": 63.27,
+   "end": 63.64
+  },
+  {
+   "word": "apagar.",
+   "line": 18,
+   "start": 63.66,
+   "end": 64.075
+  }
+ ],
+ "planos": [
+  {
+   "desde": 0,
+   "hasta": 1.77,
+   "primera": 0,
+   "ultima": 4,
+   "acto": "gancho",
+   "tipo": "escena",
+   "imagen": null,
+   "prompt": "a young office worker in his late twenties with short dark hair wearing a plain white dress shirt walking into a glass-walled office meeting room holding a paper coffee cup, coworkers seated around a long table, seen from inside the room, candid cinematic film still, 35mm, warm amber light from a single lamp, dark room, deep shadows, shallow depth of field, subtle film grain, vertical composition, no text, no watermark",
+   "tratamiento": "color",
+   "encuadre": "abierto",
+   "foco": "centro"
+  },
+  {
+   "desde": 1.77,
+   "hasta": 3.42,
+   "primera": 5,
+   "ultima": 10,
+   "acto": "gancho",
+   "tipo": "escena",
+   "imagen": null,
+   "prompt": "a young office worker in his late twenties with short dark hair wearing a plain white dress shirt walking into a glass-walled office meeting room holding a paper coffee cup, coworkers seated around a long table, seen from inside the room, candid cinematic film still, 35mm, warm amber light from a single lamp, dark room, deep shadows, shallow depth of field, subtle film grain, vertical composition, no text, no watermark",
+   "tratamiento": "color",
+   "encuadre": "detalle",
+   "foco": "abajo"
+  },
+  {
+   "desde": 3.42,
+   "hasta": 5.475,
+   "primera": 11,
+   "ultima": 16,
+   "acto": "gancho",
+   "tipo": "escena",
+   "imagen": null,
+   "prompt": "a shoe catching on a black power cable on an office carpet floor, low angle close view, candid cinematic film still, 35mm, warm amber light from a single lamp, dark room, deep shadows, shallow depth of field, subtle film grain, vertical composition, no text, no watermark",
+   "tratamiento": "color",
+   "encuadre": "medio",
+   "foco": "abajo"
+  },
+  {
+   "desde": 5.475,
+   "hasta": 6.675,
+   "primera": 17,
+   "ultima": 19,
+   "acto": "gancho",
+   "tipo": "escena",
+   "imagen": null,
+   "prompt": "a paper coffee cup in mid-air spilling coffee in an arc, office meeting room blurred behind, frozen motion, candid cinematic film still, 35mm, warm amber light from a single lamp, dark room, deep shadows, shallow depth of field, subtle film grain, vertical composition, no text, no watermark",
+   "tratamiento": "color",
+   "encuadre": "medio",
+   "foco": "centro"
+  },
+  {
+   "desde": 6.675,
+   "hasta": 9.03,
+   "primera": 20,
+   "ultima": 26,
+   "acto": "gancho",
+   "tipo": "escena",
+   "imagen": null,
+   "prompt": "a young office worker in his late twenties with short dark hair wearing a plain white dress shirt looking down at a large coffee stain on the front of the shirt, shocked expression, office meeting room, candid cinematic film still, 35mm, warm amber light from a single lamp, dark room, deep shadows, shallow depth of field, subtle film grain, vertical composition, no text, no watermark",
+   "tratamiento": "color",
+   "encuadre": "medio",
+   "foco": "arriba"
+  },
+  {
+   "desde": 9.03,
+   "hasta": 11.73,
+   "primera": 27,
+   "ultima": 35,
+   "acto": "gancho",
+   "tipo": "escena",
+   "imagen": null,
+   "prompt": "a long meeting table seen from the head of the table, a dozen office workers all turning their heads to stare straight at the camera, candid cinematic film still, 35mm, warm amber light from a single lamp, dark room, deep shadows, shallow depth of field, subtle film grain, vertical composition, no text, no watermark",
+   "tratamiento": "color",
+   "encuadre": "abierto",
+   "foco": "centro"
+  },
+  {
+   "desde": 11.73,
+   "hasta": 13.74,
+   "primera": 36,
+   "ultima": 41,
+   "acto": "gancho",
+   "tipo": "escena",
+   "imagen": null,
+   "prompt": "a long meeting table seen from the head of the table, a dozen office workers all turning their heads to stare straight at the camera, candid cinematic film still, 35mm, warm amber light from a single lamp, dark room, deep shadows, shallow depth of field, subtle film grain, vertical composition, no text, no watermark",
+   "tratamiento": "color",
+   "encuadre": "detalle",
+   "foco": "arriba"
+  },
+  {
+   "desde": 13.74,
+   "hasta": 15.585,
+   "primera": 42,
+   "ultima": 46,
+   "acto": "tesis",
+   "tipo": "narrador",
+   "encuadre": "medio"
+  },
+  {
+   "desde": 15.585,
+   "hasta": 17.055,
+   "primera": 47,
+   "ultima": 49,
+   "acto": "tesis",
+   "tipo": "lamina",
+   "bloque": "titular",
+   "clave": [
+    "reflector"
+   ],
+   "imagen": null
+  },
+  {
+   "desde": 17.055,
+   "hasta": 20.01,
+   "primera": 50,
+   "ultima": 58,
+   "acto": "historia",
+   "tipo": "lamina",
+   "bloque": "cita",
+   "clave": [],
+   "imagen": null,
+   "prompt": "a university psychology office with a desk, stacked notebooks and a chalkboard, seen from the doorway, nobody facing the camera, black and white archival press photograph, mid-century, soft focus, heavy film grain, vertical composition, no text, no watermark",
+   "autor": "Thomas Gilovich"
+  },
+  {
+   "desde": 20.01,
+   "hasta": 21.42,
+   "primera": 59,
+   "ultima": 62,
+   "acto": "historia",
+   "tipo": "narrador",
+   "encuadre": "medio"
+  },
+  {
+   "desde": 21.42,
+   "hasta": 24.3,
+   "primera": 63,
+   "ultima": 71,
+   "acto": "historia",
+   "tipo": "escena",
+   "imagen": null,
+   "prompt": "a college student seen from behind opening the door of a crowded classroom, other students seated at desks, black and white archival press photograph, mid-century, soft focus, heavy film grain, vertical composition, no text, no watermark",
+   "tratamiento": "archivo",
+   "encuadre": "abierto",
+   "foco": "centro"
+  },
+  {
+   "desde": 24.3,
+   "hasta": 26.205,
+   "primera": 72,
+   "ultima": 75,
+   "acto": "historia",
+   "tipo": "lamina",
+   "bloque": "recorte",
+   "clave": [
+    "camiseta"
+   ],
+   "imagen": null,
+   "prompt": "a folded t-shirt with a big silly cartoon print on the chest, single subject, high contrast black and white studio photograph, centered, whole subject visible, isolated on a pure white background, no text",
+   "etiqueta": "la camiseta"
+  },
+  {
+   "desde": 26.205,
+   "hasta": 28.53,
+   "primera": 76,
+   "ultima": 82,
+   "acto": "historia",
+   "tipo": "lamina",
+   "bloque": "dato",
+   "clave": [
+    "mitad"
+   ],
+   "imagen": null,
+   "etiqueta": "creyeron ellos",
+   "valor": 50,
+   "sufijo": "%"
+  },
+  {
+   "desde": 28.53,
+   "hasta": 30.72,
+   "primera": 83,
+   "ultima": 88,
+   "acto": "historia",
+   "tipo": "escena",
+   "imagen": null,
+   "prompt": "a college student seen from behind opening the door of a crowded classroom, other students seated at desks, black and white archival press photograph, mid-century, soft focus, heavy film grain, vertical composition, no text, no watermark",
+   "tratamiento": "archivo",
+   "encuadre": "detalle",
+   "foco": "arriba"
+  },
+  {
+   "desde": 30.72,
+   "hasta": 32.22,
+   "primera": 89,
+   "ultima": 92,
+   "acto": "historia",
+   "tipo": "narrador",
+   "encuadre": "medio"
+  },
+  {
+   "desde": 32.22,
+   "hasta": 34.965,
+   "primera": 93,
+   "ultima": 100,
+   "acto": "historia",
+   "tipo": "lamina",
+   "bloque": "dato",
+   "clave": [
+    "cuatro"
+   ],
+   "imagen": null,
+   "etiqueta": "la recordó",
+   "valor": 25,
+   "sufijo": "%"
+  },
+  {
+   "desde": 34.965,
+   "hasta": 35.865,
+   "primera": 101,
+   "ultima": 102,
+   "acto": "mecanismo",
+   "tipo": "narrador",
+   "encuadre": "medio"
+  },
+  {
+   "desde": 35.865,
+   "hasta": 38.355,
+   "primera": 103,
+   "ultima": 109,
+   "acto": "mecanismo",
+   "tipo": "lamina",
+   "bloque": "recorte",
+   "clave": [
+    "cerebro"
+   ],
+   "imagen": null,
+   "prompt": "a human brain, side view, single subject, high contrast black and white studio photograph, centered, whole subject visible, isolated on a pure white background, no text",
+   "etiqueta": "tu cerebro"
+  },
+  {
+   "desde": 38.355,
+   "hasta": 40.35,
+   "primera": 110,
+   "ultima": 116,
+   "acto": "mecanismo",
+   "tipo": "escena",
+   "imagen": null,
+   "prompt": "a young office worker in his late twenties with short dark hair wearing a plain white dress shirt looking down at a large coffee stain on the front of the shirt, shocked expression, office meeting room, candid cinematic film still, 35mm, warm amber light from a single lamp, dark room, deep shadows, shallow depth of field, subtle film grain, vertical composition, no text, no watermark",
+   "tratamiento": "color",
+   "encuadre": "detalle",
+   "foco": "abajo"
+  },
+  {
+   "desde": 40.35,
+   "hasta": 42.615,
+   "primera": 117,
+   "ultima": 123,
+   "acto": "mecanismo",
+   "tipo": "escena",
+   "imagen": null,
+   "prompt": "a long meeting table seen from the head of the table, a dozen office workers all turning their heads to stare straight at the camera, candid cinematic film still, 35mm, warm amber light from a single lamp, dark room, deep shadows, shallow depth of field, subtle film grain, vertical composition, no text, no watermark",
+   "tratamiento": "color",
+   "encuadre": "medio",
+   "foco": "centro"
+  },
+  {
+   "desde": 42.615,
+   "hasta": 45.015,
+   "primera": 124,
+   "ultima": 131,
+   "acto": "ejemplos",
+   "tipo": "narrador",
+   "encuadre": "medio"
+  },
+  {
+   "desde": 45.015,
+   "hasta": 45.78,
+   "primera": 132,
+   "ultima": 133,
+   "acto": "ejemplos",
+   "tipo": "escena",
+   "imagen": null,
+   "prompt": "a glass of water tipped over on a restaurant table, water spreading, a hand reaching for it, candid cinematic film still, 35mm, warm amber light from a single lamp, dark room, deep shadows, shallow depth of field, subtle film grain, vertical composition, no text, no watermark",
+   "tratamiento": "color",
+   "encuadre": "medio",
+   "foco": "centro"
+  },
+  {
+   "desde": 45.78,
+   "hasta": 46.935,
+   "primera": 134,
+   "ultima": 137,
+   "acto": "ejemplos",
+   "tipo": "escena",
+   "imagen": null,
+   "prompt": "a person seen from behind speaking at a small podium in front of a blurred seated audience, candid cinematic film still, 35mm, warm amber light from a single lamp, dark room, deep shadows, shallow depth of field, subtle film grain, vertical composition, no text, no watermark",
+   "tratamiento": "color",
+   "encuadre": "medio",
+   "foco": "centro"
+  },
+  {
+   "desde": 46.935,
+   "hasta": 48.36,
+   "primera": 138,
+   "ultima": 140,
+   "acto": "ejemplos",
+   "tipo": "escena",
+   "imagen": null,
+   "prompt": "a person with very messy hair seen from behind walking into an office hallway, candid cinematic film still, 35mm, warm amber light from a single lamp, dark room, deep shadows, shallow depth of field, subtle film grain, vertical composition, no text, no watermark",
+   "tratamiento": "color",
+   "encuadre": "medio",
+   "foco": "arriba"
+  },
+  {
+   "desde": 48.36,
+   "hasta": 50.175,
+   "primera": 141,
+   "ultima": 143,
+   "acto": "ejemplos",
+   "tipo": "narrador",
+   "encuadre": "medio"
+  },
+  {
+   "desde": 50.175,
+   "hasta": 51.84,
+   "primera": 144,
+   "ultima": 148,
+   "acto": "giro",
+   "tipo": "narrador",
+   "encuadre": "cerca"
+  },
+  {
+   "desde": 51.84,
+   "hasta": 54.405,
+   "primera": 149,
+   "ultima": 155,
+   "acto": "giro",
+   "tipo": "lamina",
+   "bloque": "titular",
+   "clave": [
+    "libre"
+   ],
+   "imagen": null
+  },
+  {
+   "desde": 54.405,
+   "hasta": 55.98,
+   "primera": 156,
+   "ultima": 160,
+   "acto": "aplicacion",
+   "tipo": "narrador",
+   "encuadre": "medio"
+  },
+  {
+   "desde": 55.98,
+   "hasta": 57.09,
+   "primera": 161,
+   "ultima": 163,
+   "acto": "aplicacion",
+   "tipo": "escena",
+   "imagen": null,
+   "prompt": "a raised hand in a meeting room seen from behind the person, coworkers at the table looking on, candid cinematic film still, 35mm, warm amber light from a single lamp, dark room, deep shadows, shallow depth of field, subtle film grain, vertical composition, no text, no watermark",
+   "tratamiento": "color",
+   "encuadre": "medio",
+   "foco": "arriba"
+  },
+  {
+   "desde": 57.09,
+   "hasta": 58.245,
+   "primera": 164,
+   "ultima": 166,
+   "acto": "aplicacion",
+   "tipo": "escena",
+   "imagen": null,
+   "prompt": "a group of coworkers laughing around a table while a young office worker in his late twenties with short dark hair wearing a plain white dress shirt tells a story in the middle, candid cinematic film still, 35mm, warm amber light from a single lamp, dark room, deep shadows, shallow depth of field, subtle film grain, vertical composition, no text, no watermark",
+   "tratamiento": "color",
+   "encuadre": "abierto",
+   "foco": "centro"
+  },
+  {
+   "desde": 58.245,
+   "hasta": 59.58,
+   "primera": 167,
+   "ultima": 169,
+   "acto": "aplicacion",
+   "tipo": "escena",
+   "imagen": null,
+   "prompt": "a young office worker in his late twenties with short dark hair wearing a plain white dress shirt buttoning a clean shirt in front of a mirror with a calm smile, candid cinematic film still, 35mm, warm amber light from a single lamp, dark room, deep shadows, shallow depth of field, subtle film grain, vertical composition, no text, no watermark",
+   "tratamiento": "color",
+   "encuadre": "medio",
+   "foco": "arriba"
+  },
+  {
+   "desde": 59.58,
+   "hasta": 62.685,
+   "primera": 170,
+   "ultima": 177,
+   "acto": "cierre",
+   "tipo": "lamina",
+   "bloque": "recorte",
+   "clave": [
+    "reflector"
+   ],
+   "imagen": null,
+   "prompt": "a theatre spotlight lamp on a tripod stand, single subject, high contrast black and white studio photograph, centered, whole subject visible, isolated on a pure white background, no text",
+   "etiqueta": "el reflector"
+  },
+  {
+   "desde": 62.685,
+   "hasta": 64.8,
+   "primera": 178,
+   "ultima": 182,
+   "acto": "cierre",
+   "tipo": "escena",
+   "imagen": null,
+   "prompt": "a long meeting table seen from the head of the table, a dozen office workers each looking down at their own laptop or phone, nobody looking at the camera, candid cinematic film still, 35mm, warm amber light from a single lamp, dark room, deep shadows, shallow depth of field, subtle film grain, vertical composition, no text, no watermark",
+   "tratamiento": "color",
+   "encuadre": "abierto",
+   "foco": "centro"
+  }
+ ],
+ "ambiente": null,
+ "voz": null,
+ "sonido": null
+}

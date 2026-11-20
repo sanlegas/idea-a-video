@@ -1,0 +1,169 @@
+{
+ "profiles": {
+  "sesion": {
+   "default": {
+    "provider": "sesion",
+    "model": "asistente de la sesión"
+   }
+  },
+  "local": {
+   "default": {
+    "provider": "local",
+    "model": "qwen/qwen3.6-27b"
+   },
+   "storyboard": {
+    "provider": "local",
+    "model": "google/gemma-4-31b"
+   },
+   "critico": {
+    "provider": "local",
+    "model": "qwen/qwen3.6-27b"
+   }
+  },
+  "deepseek": {
+   "default": {
+    "provider": "deepseek",
+    "model": "deepseek-flash",
+    "thinking": "high"
+   },
+   "escritor": {
+    "provider": "deepseek",
+    "model": "deepseek-flash",
+    "thinking": "low"
+   },
+   "correccion": {
+    "provider": "deepseek",
+    "model": "deepseek-flash",
+    "thinking": "off"
+   },
+   "critico": {
+    "provider": "deepseek",
+    "model": "deepseek-flash",
+    "thinking": "off"
+   },
+   "comparador": {
+    "provider": "deepseek",
+    "model": "deepseek-flash",
+    "thinking": "off"
+   },
+   "sonido": {
+    "provider": "deepseek",
+    "model": "deepseek-flash",
+    "thinking": "off"
+   }
+  },
+  "mix": {
+   "default": {
+    "provider": "deepseek",
+    "model": "deepseek-flash",
+    "thinking": "high"
+   },
+   "chips": {
+    "provider": "local",
+    "model": "qwen/qwen3.6-27b"
+   },
+   "critico": {
+    "provider": "deepseek",
+    "model": "deepseek-flash",
+    "thinking": "off"
+   }
+  },
+  "openrouter": {
+   "default": {
+    "provider": "openrouter",
+    "model": "deepseek/deepseek-v4.1-flash"
+   },
+   "critico": {
+    "provider": "openrouter",
+    "model": "deepseek/deepseek-v4.1-flash"
+   }
+  },
+  "glm": {
+   "default": {
+    "provider": "openrouter",
+    "model": "z-ai/glm-5.3-flash",
+    "thinking": "high",
+    "sort": "price"
+   },
+   "escritor": {
+    "provider": "openrouter",
+    "model": "z-ai/glm-5.3-flash",
+    "thinking": "low",
+    "sort": "price"
+   },
+   "correccion": {
+    "provider": "openrouter",
+    "model": "z-ai/glm-5.3-flash",
+    "thinking": "minimal",
+    "sort": "price"
+   },
+   "critico": {
+    "provider": "openrouter",
+    "model": "z-ai/glm-5.3-flash",
+    "thinking": "minimal",
+    "sort": "price"
+   },
+   "comparador": {
+    "provider": "openrouter",
+    "model": "z-ai/glm-5.3-flash",
+    "thinking": "minimal",
+    "sort": "price"
+   }
+  },
+  "glm_zai": {
+   "default": {
+    "provider": "openrouter",
+    "model": "z-ai/glm-5.3-flash",
+    "thinking": "high",
+    "only": [
+     "z-ai"
+    ],
+    "json": "object"
+   },
+   "escritor": {
+    "provider": "openrouter",
+    "model": "z-ai/glm-5.3-flash",
+    "thinking": "low",
+    "only": [
+     "z-ai"
+    ],
+    "json": "object"
+   },
+   "correccion": {
+    "provider": "openrouter",
+    "model": "z-ai/glm-5.3-flash",
+    "thinking": "low",
+    "only": [
+     "z-ai"
+    ],
+    "json": "object"
+   },
+   "critico": {
+    "provider": "openrouter",
+    "model": "z-ai/glm-5.3-flash",
+    "thinking": "minimal",
+    "only": [
+     "z-ai"
+    ],
+    "json": "object"
+   },
+   "comparador": {
+    "provider": "openrouter",
+    "model": "z-ai/glm-5.3-flash",
+    "thinking": "minimal",
+    "only": [
+     "z-ai"
+    ],
+    "json": "object"
+   }
+  }
+ },
+ "prices": {
+  "deepseek-flash": {
+   "hit": 0.003,
+   "miss": 0.15,
+   "out": 0.6,
+   "peak": 2
+  }
+ }
+}

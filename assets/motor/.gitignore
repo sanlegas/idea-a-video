@@ -1,0 +1,12 @@
+.env
+config/local.json
+node_modules/
+runs/
+out/
+public/run/
+public/storytelling/
+public/explica/
+public/tinta/
+public/kenney/
+public/estudio/recursos/
+.DS_Store

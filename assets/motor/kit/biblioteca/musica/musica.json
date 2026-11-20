@@ -1,0 +1,193 @@
+{
+	"investigacion_oscura": {
+		"archivo": "investigacion_oscura.mp3",
+		"animo": [
+			"tension"
+		],
+		"hace": "Partitura oscura y misteriosa, pensada para ir debajo de diálogos",
+		"dur": 48.0,
+		"fuente": "https://opengameart.org/content/unsolved-investigation",
+		"titulo": "Unsolved Investigation",
+		"autor": "isaiah658",
+		"licencia": "CC0 1.0",
+		"descarga": {
+			"url": "https://opengameart.org/sites/default/files/Unsolved-Investigation-isaiah658_0.ogg",
+			"sha256": "2877e423ff90cb99b3082840e66cf79d69a809708466c6f27c750c0e1ce2a912",
+			"bytes": 2200350
+		}
+	},
+	"expediente": {
+		"archivo": "expediente.mp3",
+		"animo": [
+			"tension"
+		],
+		"looks": [
+			"noche"
+		],
+		"hace": "Misterio de ciencia ficción que va creciendo",
+		"dur": 58.0,
+		"fuente": "https://opengameart.org/content/the-y-files",
+		"titulo": "The Y Files",
+		"autor": "TAD",
+		"licencia": "CC0 1.0",
+		"descarga": {
+			"url": "https://opengameart.org/sites/default/files/the_y_files_0.mp3",
+			"sha256": "e10ea90d8b2a808db2e520b617f3af6d16459cb1af343872504e0ac8df376b9d",
+			"bytes": 1860671
+		}
+	},
+	"detective": {
+		"archivo": "detective.mp3",
+		"animo": [
+			"curiosidad"
+		],
+		"looks": [
+			"papel"
+		],
+		"hace": "Música de detective, en bucle",
+		"dur": 56.1,
+		"fuente": "https://opengameart.org/content/investigation-0",
+		"titulo": "Investigation",
+		"autor": "Umplix",
+		"licencia": "CC0 1.0",
+		"descarga": {
+			"url": "https://opengameart.org/sites/default/files/_investigation.wav",
+			"sha256": "f20289168bf00a13108b1dac2e0baacb7e405c29b6d113200f3c1ec30366e110",
+			"bytes": 14861504
+		}
+	},
+	"lofi": {
+		"archivo": "lofi.mp3",
+		"animo": [
+			"curiosidad"
+		],
+		"looks": [
+			"papel",
+			"brasa"
+		],
+		"hace": "Lofi hip hop tranquilo, de piano eléctrico",
+		"dur": 123.1,
+		"fuente": "https://opengameart.org/content/chill-lofi-inspired",
+		"titulo": "Chill lofi inspired",
+		"autor": "omfgdude",
+		"licencia": "CC0 1.0",
+		"descarga": {
+			"url": "https://opengameart.org/sites/default/files/ChillLofiR_0.mp3",
+			"sha256": "1796a480e3db0c02d5e58059b2ae7cfbeab344f95e0443496790da022cbe91b5",
+			"bytes": 2717205
+		}
+	},
+	"synthwave": {
+		"archivo": "synthwave.mp3",
+		"animo": [
+			"curiosidad"
+		],
+		"looks": [
+			"noche"
+		],
+		"hace": "Synthwave relajado de sintetizadores",
+		"dur": 180.0,
+		"fuente": "https://opengameart.org/content/calm-relax-1-synthwave-421k",
+		"titulo": "Calm Relax 1 (Synthwave 421k)",
+		"autor": "cynicmusic (The Cynic Project)",
+		"licencia": "CC0 1.0",
+		"descarga": {
+			"url": "https://opengameart.org/sites/default/files/007_Synthwave_421k.mp3",
+			"sha256": "5d5cb73be5a1e3e42c12171d7e51ef1ed168ff931ff008b8bc37d1a548b1fbd2",
+			"bytes": 18976382
+		},
+		"recorte": 180
+	},
+	"ecos": {
+		"archivo": "ecos.mp3",
+		"animo": [
+			"oscuro"
+		],
+		"hace": "Ambiente inquietante, en la línea de Silent Hill",
+		"dur": 48.0,
+		"fuente": "https://opengameart.org/content/echoes-of-the-past",
+		"titulo": "Echoes of the Past",
+		"autor": "isaiah658",
+		"licencia": "CC0 1.0",
+		"descarga": {
+			"url": "https://opengameart.org/sites/default/files/echoes_of_the_past.wav",
+			"sha256": "ec149d7daceb8d0d5f20816ae401d8e04ea8e5960fc558d378c2c27139835292",
+			"bytes": 8466476
+		}
+	},
+	"desangre": {
+		"archivo": "desangre.mp3",
+		"animo": [
+			"oscuro"
+		],
+		"hace": "Lento y dramático, de cámara lenta",
+		"dur": 158.3,
+		"fuente": "https://opengameart.org/content/bleeding-out",
+		"titulo": "Bleeding out",
+		"autor": "Brandon Morris",
+		"licencia": "CC0 1.0",
+		"descarga": {
+			"url": "https://opengameart.org/sites/default/files/bleeding_out2_2.ogg",
+			"sha256": "0a2f7b07e01e5bd681ef760cb12217f55c3ed785c982c4e6abef956658debbd7",
+			"bytes": 1931664
+		}
+	},
+	"piano_bateria": {
+		"archivo": "piano_bateria.mp3",
+		"animo": [
+			"esperanza"
+		],
+		"looks": [
+			"papel",
+			"brasa"
+		],
+		"hace": "Piano con batería: algo melancólico, pero esperanzado",
+		"dur": 64.0,
+		"fuente": "https://opengameart.org/content/piano-drums-positive-melancholy-212",
+		"titulo": "Piano & Drums, positive melancholy",
+		"autor": "Dizzy Crow",
+		"licencia": "CC0 1.0",
+		"descarga": {
+			"url": "https://opengameart.org/sites/default/files/Valentin.ogg",
+			"sha256": "07edf39dc2409fb1afc78da821b3e5992940a5903cef4015b1aa8905c9b72c83",
+			"bytes": 1557315
+		}
+	},
+	"revelacion": {
+		"archivo": "revelacion.mp3",
+		"animo": [
+			"esperanza"
+		],
+		"hace": "Acústico, meditativo y calmado",
+		"dur": 84.8,
+		"fuente": "https://opengameart.org/content/revelation",
+		"titulo": "Revelation",
+		"autor": "Indieteur",
+		"licencia": "CC0 1.0",
+		"descarga": {
+			"url": "https://opengameart.org/sites/default/files/Revelation_0.mp3",
+			"sha256": "b6111a64fa948e76b01d08fc5de53177885a8d8db0dea65330946760892feb43",
+			"bytes": 3395007
+		}
+	},
+	"momentos": {
+		"archivo": "momentos.mp3",
+		"animo": [
+			"esperanza"
+		],
+		"looks": [
+			"papel"
+		],
+		"hace": "Tema pequeño de piano",
+		"dur": 76.8,
+		"fuente": "https://opengameart.org/content/happy-moments",
+		"titulo": "Happy moments",
+		"autor": "Centurion_of_war",
+		"licencia": "CC0 1.0",
+		"descarga": {
+			"url": "https://opengameart.org/sites/default/files/piano1.4_0.ogg",
+			"sha256": "c8a94e9bc928e6701784c6533a467392f7fee7490c53c65766401a71e5d5b496",
+			"bytes": 4367077
+		}
+	}
+}

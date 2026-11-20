@@ -1,0 +1,47 @@
+{
+ "look": "papel",
+ "personaje_en": "a young office worker in his late twenties with short dark hair wearing a plain white dress shirt",
+ "ambiente_en": "a small office at night with a desk lamp and a whiteboard",
+ "actos": [
+  {
+   "acto": "gancho",
+   "primera": 0,
+   "ultima": 3
+  },
+  {
+   "acto": "tesis",
+   "primera": 4,
+   "ultima": 4
+  },
+  {
+   "acto": "historia",
+   "primera": 5,
+   "ultima": 8
+  },
+  {
+   "acto": "mecanismo",
+   "primera": 9,
+   "ultima": 11
+  },
+  {
+   "acto": "ejemplos",
+   "primera": 12,
+   "ultima": 14
+  },
+  {
+   "acto": "giro",
+   "primera": 15,
+   "ultima": 15
+  },
+  {
+   "acto": "aplicacion",
+   "primera": 16,
+   "ultima": 16
+  },
+  {
+   "acto": "cierre",
+   "primera": 17,
+   "ultima": 18
+  }
+ ]
+}

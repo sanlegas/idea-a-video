@@ -1,0 +1,11 @@
+{
+	"_": "Copia este archivo a config/local.json y deja solo lo que tu máquina tiene. Todo es opcional. Cada comando es una lista: programa y primeros argumentos. El contrato de cada uno está en scripts/lib/local.ts.",
+	"voz": {"comando": ["python3", "mis_scripts/narrar.py"], "voz": "nombre_de_mi_voz"},
+	"imagen": {"comando": ["python3", "mis_scripts/dibujar.py"], "modelo": "mi_modelo", "segundos": 30},
+	"recorte": {"comando": ["python3", "scripts/local/recorte.py"]},
+	"tiempos": {"comando": ["python3", "mis_scripts/palabras.py"]},
+	"modelo3d": {"comando": ["mis_scripts/imagen_a_glb.sh"], "reintentos": [["--res", "512"]], "mb_libres": 12000},
+	"llm": {"url": "http://127.0.0.1:1234/v1"},
+	"whisper": {"cli": "whisper-cli", "modelo": "~/.cache/idea-a-video/whisper/ggml-small.bin"},
+	"chrome": {"ruta": "/usr/bin/google-chrome", "gl": "angle-egl"}
+}

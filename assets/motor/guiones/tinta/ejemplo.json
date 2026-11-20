@@ -1,0 +1,25 @@
+{
+	"nombre": "ejemplo",
+	"duracion": 14,
+	"objetos": [
+		{"id": "tele", "nombre": "televisión", "fuente": "kenney:muebles/televisionModern", "largo": 5, "lugar": {"escenario": "sala", "slot": "mueble_tv"}},
+		{"id": "radio", "nombre": "radio", "fuente": "kenney:muebles/radio", "largo": 2.6, "lugar": {"escenario": "sala", "slot": "mesa"}},
+		{"id": "visita", "nombre": "visita", "fuente": "bolo", "largo": 6.3, "lugar": {"escenario": "sala", "slot": "piso_centro"}},
+		{"id": "laptop", "nombre": "computadora", "fuente": "kenney:muebles/laptop", "largo": 6, "lugar": {"escenario": "repisa", "slot": "repisa_baja_izquierda"}},
+		{"id": "bocina", "nombre": "bocina", "fuente": "kenney:muebles/speaker", "largo": 7, "lugar": {"escenario": "repisa", "slot": "repisa_alta"}},
+		{"id": "tele_sola", "nombre": "televisión", "fuente": "kenney:muebles/televisionVintage", "largo": 9, "lugar": {"escenario": "estudio", "slot": "centro"}}
+	],
+	"tomas": [
+		{"desde": 0, "hasta": 4, "escenario": "sala", "encuadre": "general", "rotulo": "una sala cualquiera"},
+		{"desde": 4, "hasta": 6.5, "escenario": "sala", "encuadre": "objeto", "objetivo": "visita", "rotulo": "llega una visita", "tono": "alerta"},
+		{"desde": 6.5, "hasta": 10, "escenario": "repisa", "encuadre": "general", "rotulo": "los aparatos de la casa", "tono": "info"},
+		{"desde": 10, "hasta": 14, "escenario": "estudio", "encuadre": "objeto", "objetivo": "tele_sola", "rotulo": "todo sale del catálogo"}
+	],
+	"acciones": [
+		{"tipo": "entra", "objeto": "visita", "en": 0.8, "hasta": 4.2},
+		{"tipo": "pulso", "objeto": "visita", "en": 4.4, "hasta": 6.5},
+		{"tipo": "aparece", "objeto": "laptop", "en": 7},
+		{"tipo": "pulso", "objeto": "laptop", "en": 7.4, "hasta": 10},
+		{"tipo": "gira", "objeto": "tele_sola", "en": 10, "hasta": 14}
+	]
+}

@@ -1,0 +1,90 @@
+{
+	"nombre": "ia",
+	"escenas": [
+		{
+			"tipo": "portada",
+			"dur": 3.6,
+			"antetitulo": "En menos de 2 años",
+			"titulo": "¿Cuánto creció el uso de la IA?",
+			"clave": "IA?",
+			"icono": "chip",
+			"sonidos": [{"en": 0.45, "efecto": "pop"}]
+		},
+		{
+			"tipo": "dato",
+			"dur": 4.2,
+			"entrada": "deslizar",
+			"valor": 100,
+			"sufijo": " M",
+			"etiqueta": "personas por semana usaban ChatGPT en noviembre de 2023",
+			"icono": "persona",
+			"fuente": "OpenAI, DevDay 2023",
+			"sonidos": [{"en": 0.3, "efecto": "subida"}, {"en": 2.0, "efecto": "pop"}]
+		},
+		{
+			"tipo": "linea",
+			"dur": 7.5,
+			"entrada": "barrido",
+			"titulo": "Usuarios semanales de ChatGPT",
+			"unidad": "millones de personas",
+			"puntos": [
+				{"x": "nov 23", "y": 100},
+				{"x": "ago 24", "y": 200},
+				{"x": "dic 24", "y": 300},
+				{"x": "feb 25", "y": 400},
+				{"x": "mar 25", "y": 500},
+				{"x": "ago 25", "y": 700},
+				{"x": "oct 25", "y": 800, "nota": "×8"}
+			],
+			"fuente": "anuncios de OpenAI reportados por Axios, Reuters y TechCrunch",
+			"sonidos": [{"en": 0.8, "efecto": "subida"}, {"en": 5.5, "efecto": "pop"}]
+		},
+		{
+			"tipo": "comparar",
+			"dur": 4.6,
+			"entrada": "iris",
+			"titulo": "De 100 a 800 millones",
+			"antes": {"etiqueta": "noviembre 2023", "valor": "100 M", "icono": "persona"},
+			"despues": {"etiqueta": "octubre 2025", "valor": "800 M", "icono": "globo"},
+			"sonidos": [{"en": 0.4, "efecto": "pop"}, {"en": 1.0, "efecto": "subida"}, {"en": 1.55, "efecto": "golpe_seco"}]
+		},
+		{
+			"tipo": "barras",
+			"dur": 6.5,
+			"entrada": "reloj",
+			"titulo": "Empresas que usan IA en al menos un área",
+			"unidad": "% de empresas encuestadas",
+			"barras": [
+				{"etiqueta": "2017", "valor": 20, "color": "#B8B2C4"},
+				{"etiqueta": "2019", "valor": 58, "color": "#8C86A0"},
+				{"etiqueta": "2021", "valor": 56, "color": "#8C86A0"},
+				{"etiqueta": "2023", "valor": 55, "color": "#2F6BFF"},
+				{"etiqueta": "2024", "valor": 72, "color": "#2F6BFF"},
+				{"etiqueta": "2025", "valor": 78, "color": "#FF5A36"}
+			],
+			"fuente": "McKinsey, The State of AI",
+			"sonidos": [{"en": 0.5, "efecto": "click"}, {"en": 2.4, "efecto": "click"}, {"en": 2.9, "efecto": "subida"}]
+		},
+		{
+			"tipo": "pasos",
+			"dur": 5.4,
+			"entrada": "deslizar",
+			"titulo": "¿Por qué tan rápido?",
+			"pasos": [
+				{"icono": "chat", "texto": "Se usa escribiendo, como un chat"},
+				{"icono": "rayo", "texto": "Gratis para empezar"},
+				{"icono": "globo", "texto": "Entiende tu idioma"}
+			],
+			"sonidos": [{"en": 0.5, "efecto": "pop"}, {"en": 1.2, "efecto": "pop"}, {"en": 1.9, "efecto": "pop"}]
+		},
+		{
+			"tipo": "cierre",
+			"dur": 3.8,
+			"entrada": "fundido",
+			"frase": "La IA ya no es el futuro: es lo cotidiano",
+			"clave": "cotidiano",
+			"pie": "Sígueme para más datos",
+			"sonidos": [{"en": 0.6, "efecto": "exito"}]
+		}
+	]
+}

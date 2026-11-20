@@ -1,0 +1,37 @@
+{
+  "voz": {
+    "proveedor": "auto",
+    "elevenlabs": {
+      "voice_id": "",
+      "model_id": "eleven_multilingual_v2",
+      "output_format": "mp3_44100_128",
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0,
+      "speed": 1
+    }
+  },
+  "imagen": {
+    "proveedores": [
+      "auto"
+    ],
+    "stock": {
+      "fuentes": [
+        "pexels",
+        "commons",
+        "openverse"
+      ],
+      "licencias_openverse": "cc0,pdm",
+      "ancho_minimo": 1000
+    },
+    "nube": {
+      "servicio": "fal",
+      "modelo": "fal-ai/flux/schnell",
+      "dolares_por_imagen": 0.003
+    }
+  },
+  "musica": {
+    "modo": "pistas",
+    "nivel": 0.5
+  }
+}

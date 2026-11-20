@@ -1,0 +1,90 @@
+{
+	"barrido": {
+		"archivo": "barrido.wav",
+		"hace": "Barrido corto, limpio y aireado",
+		"cuando": "corte de látigo: entra una lámina o cambia la imagen de golpe",
+		"dur": 0.62,
+		"ancla": 0.26,
+		"fuente": "kit/biblioteca/sonidos/barrido.mjs",
+		"titulo": "Barrido sintetizado por código",
+		"autor": "idea-a-video",
+		"licencia": "CC0 1.0"
+	},
+	"campanita": {
+		"archivo": "campanita.wav",
+		"hace": "Campanita brillante de dos notas",
+		"cuando": "entra un letrero con una cifra o un dato que se revela",
+		"dur": 1.3,
+		"ancla": 0.004,
+		"fuente": "kit/biblioteca/sonidos/campanita.mjs",
+		"titulo": "Campanita sintetizada por código",
+		"autor": "idea-a-video",
+		"licencia": "CC0 1.0"
+	},
+	"barrido_grave": {
+		"archivo": "barrido_grave.wav",
+		"hace": "Barrido grave y largo, de tráiler",
+		"cuando": "apertura en iris o cambio de acto",
+		"dur": 1.33,
+		"ancla": 0.21,
+		"fuente": "https://freesound.org/people/AudioPapkin/sounds/648729/",
+		"titulo": "Cinematic Woosh SFX-010.wav",
+		"autor": "AudioPapkin",
+		"licencia": "CC0 1.0"
+	},
+	"impacto": {
+		"archivo": "impacto.wav",
+		"hace": "Golpe grave con cola",
+		"cuando": "destello: llega la tesis o el giro",
+		"dur": 1.64,
+		"ancla": 0.12,
+		"fuente": "https://freesound.org/people/AudioPapkin/sounds/755054/",
+		"titulo": "Sound Design Elements Impact SFX PS 017",
+		"autor": "AudioPapkin",
+		"licencia": "CC0 1.0"
+	},
+	"subgolpe": {
+		"archivo": "subgolpe.wav",
+		"hace": "Bombo seco y grave",
+		"cuando": "acercamiento de golpe sobre la misma imagen",
+		"dur": 0.44,
+		"ancla": 0.04,
+		"fuente": "https://freesound.org/people/NoirPantalon/sounds/102130/",
+		"titulo": "Hard_Subby_Kick.mp3",
+		"autor": "NoirPantalon",
+		"licencia": "CC0 1.0"
+	},
+	"subida": {
+		"archivo": "subida.wav",
+		"hace": "Subida corta que termina en el corte",
+		"cuando": "anticipa el destello de la tesis o el giro",
+		"dur": 0.68,
+		"ancla": 0.61,
+		"fuente": "https://freesound.org/people/magnuswaker/sounds/523057/",
+		"titulo": "ENERGY RISER 2",
+		"autor": "magnuswaker",
+		"licencia": "CC0 1.0"
+	},
+	"fallo": {
+		"archivo": "fallo.wav",
+		"hace": "Interferencia digital",
+		"cuando": "corte con fallo de señal",
+		"dur": 0.48,
+		"ancla": 0.22,
+		"fuente": "https://freesound.org/people/tadaizm/sounds/458065/",
+		"titulo": "Digital Glitch_v1.wav",
+		"autor": "tadaizm",
+		"licencia": "CC0 1.0"
+	},
+	"obturador": {
+		"archivo": "obturador.wav",
+		"hace": "Obturador de cámara",
+		"cuando": "entra una foto de archivo o una cita",
+		"dur": 0.29,
+		"ancla": 0.1,
+		"fuente": "https://freesound.org/people/roachpowder/sounds/170229/",
+		"titulo": "Camera Shutter",
+		"autor": "roachpowder",
+		"licencia": "CC0 1.0"
+	}
+}

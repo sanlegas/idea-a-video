@@ -1,0 +1,34 @@
+{
+  "face_model": {
+    "url": "https://raw.githubusercontent.com/google-ai-edge/mediapipe/master/mediapipe/modules/face_geometry/data/canonical_face_model.obj",
+    "file": "public/estudio/recursos/canonical_face_model.obj",
+    "bytes": 45999,
+    "credit": "Malla facial: MediaPipe (Google, Apache 2.0)",
+    "sha256": "8bac80443397e113f41a8b565ea72c59390bc031d9defab289dba7bc0c54e618"
+  },
+  "night_lights": {
+    "url": "https://assets.science.nasa.gov/content/dam/science/esd/eo/images/imagerecords/144000/144898/BlackMarble_2016_3km.jpg",
+    "file": "public/estudio/recursos/BlackMarble_2016_3km.jpg",
+    "bytes": 8106233,
+    "credit": "Luces nocturnas: NASA Earth Observatory",
+    "about": "Mapa real de la Tierra de noche con las luces de las ciudades, en proyección 2:1 para envolver una esfera",
+    "aspect": 2,
+    "derived": {
+      "file": "public/estudio/recursos/globe_lights.jpg",
+      "ffmpeg": [
+        "-vf",
+        "scale=8192:4096:flags=lanczos",
+        "-q:v",
+        "3"
+      ]
+    },
+    "sha256": "230aac448ae68c358be433dd518888cccb3a85ccf66f7b44326441c324ad6725"
+  },
+  "water_mask": {
+    "url": "https://unpkg.com/three-globe@2.45.6/example/img/earth-water.png",
+    "file": "public/estudio/recursos/earth-water.png",
+    "bytes": 430200,
+    "credit": "Máscara de agua: three-globe (MIT), datos NASA",
+    "sha256": "3a8132db56aac4e64e7fcbf2928ee970c075ac6a96b38798d0bb8be82836a4d3"
+  }
+}
