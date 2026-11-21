@@ -6,7 +6,9 @@ Sin plantillas: para cada escena, un modelo inventa la imagen, escribe un progra
 pnpm estudio <nombre> --guion guiones/x.md
 pnpm estudio <nombre> --llm openrouter        # recomendado: un modelo por API
 pnpm estudio <nombre> --modelos taza,cama     # usa modelos 3D del catálogo (kit/modelos)
+pnpm blender <nombre>                         # construye en Blender los modelos nuevos de runs/<nombre>/modelos.py
 pnpm estudio <nombre> --sin-imagenes          # modo local: modelos y dibujos 2D, sin generar imágenes
+pnpm estudio <nombre> --sin-blender           # no construye modelos nuevos aunque haya Blender
 pnpm estudio <nombre> --ligero                # render rápido para computadoras con poca GPU
 pnpm estudio <nombre> --intentos 3            # revisiones visuales por escena
 pnpm estudio <nombre> --una-escena            # todo el guion como una sola escena
@@ -20,6 +22,7 @@ Resultado: `runs/<nombre>/film.mp4` y `reporte.json`. Si una escena termina rota
 ## Qué necesita
 
 - **Imágenes generadas (opcionales):** con `FAL_KEY` o un comando de imagen propio, una escena puede pedir objetos realistas generados para ella. Las fotos de banco no sirven: las escenas piden objetos concretos. Sin generador, o con `modo=local` en el asistente, el flujo corre en modo local (abajo) y el diagnóstico lo marca `limitado`.
+- **Blender (opcional):** si la máquina lo tiene, el flujo construye solo los modelos 3D clave que el catálogo no tiene: el LLM escribe cada uno en Python y Blender lo arma, sin generador de imágenes. Ver [blender.md](blender.md).
 - **Recorte de fondo:** solo con imágenes generadas. Con un comando de recorte (`rembg`) cada objeto queda con su silueta; sin él, el fondo negro se vuelve transparente y los objetos oscuros pierden partes.
 - **LLM:** con el asistente de la sesión funciona, pero es lento: cada escena deja varios pedidos (dirección, programa, y una crítica con imagen por cada intento). Para un video de 8 escenas son decenas de pedidos. Con una clave (`--llm openrouter` o `--llm deepseek`) corre solo.
 - **Voz:** cualquiera.
@@ -42,6 +45,7 @@ pnpm modelos guardar <nombre> <modelo> --como <nuevo> --en "qué muestra (partes
 - **Antes de correr el video**, busca los objetos y personajes del guion y pasa los que sirvan con `--modelos a,b` o `pnpm modelos usar`. El flujo los copia a la corrida y se los ofrece a cada escena con su descripción y proporciones.
 - **En la escena:** `kit.model('<nombre>', {height})` lo pone de pie sobre el piso con esa altura; una parte se alcanza con `getObjectByName('<parte>')` y se gira desde su pivote (hombro, cadera, bisagra).
 - **Modelos propios:** `runs/<nombre>/modelos.json` también acepta un `.glb` hecho para ese video: `{"cohete": {"archivo": "ruta/cohete.glb", "en": "qué muestra"}}`. Si queda bien, `pnpm modelos guardar` lo pasa al catálogo para los siguientes videos.
+- **Modelos nuevos con Blender:** si la máquina tiene Blender, después de las ideas el flujo decide qué objetos o personajes clave faltan en el catálogo (hasta 4), el LLM escribe cada uno en Python, Blender lo construye y una revisión con su vista previa lo aprueba o lo manda corregir. Quedan en `runs/<nombre>/modelos_src` y en `runs/<nombre>/modelos.json`, y cada escena los recibe como los del catálogo. `--sin-blender` lo apaga. También se pueden construir a mano antes de correr: `pnpm blender <nombre> --nuevo` y `pnpm blender <nombre>`. Reglas y piezas en [blender.md](blender.md).
 
 ## Modo local: sin servicios externos
 
@@ -61,6 +65,7 @@ Con la voz del sistema, el asistente como LLM y la música ya bajada, nada sale 
 | Entorno | Revisa herramientas, disco y clave | Código |
 | Voz y palabras | Narra y mide cada palabra | Proveedor de voz |
 | Ideas | Divide el guion en escenas y define el hilo visual; cada escena dice cómo sale: `corte`, `swipe` o `fundido` | LLM |
+| Modelos nuevos | Solo con Blender: decide qué modelos 3D clave faltan en el catálogo, escribe cada uno en Python, lo construye en Blender y revisa su vista previa | LLM y Blender |
 | Dirección | Para cada escena: la imagen, qué pasa en cada palabra clave y qué imágenes o recursos necesita | LLM |
 | Imágenes y recursos | Genera objetos y lugares, recorta fondos y baja recursos permitidos | Proveedor de imágenes |
 | Escritor | Escribe un programa corto por escena | LLM |

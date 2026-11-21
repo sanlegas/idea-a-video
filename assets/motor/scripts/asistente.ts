@@ -13,6 +13,7 @@ import {spawnSync} from 'node:child_process';
 import {existsSync} from 'node:fs';
 import path from 'node:path';
 import {createInterface} from 'node:readline/promises';
+import {instalarBlender} from './lib/blender';
 import {CLAVES} from './lib/claves';
 import {FLUJOS} from './lib/flujos';
 import {perfilPorDefecto} from './lib/llm';
@@ -40,7 +41,7 @@ const args = process.argv.slice(2);
 
 type Diagnostico = {
 	sistema: {plataforma: string; procesador: string; memoria_gb: number; disco_libre_gb: number; gpu: {tipo: string; nombre: string; memoria_gb: number}};
-	herramientas: {node: string; pnpm: string | null; ffmpeg: boolean; ffprobe: boolean; python3: boolean; webgl: boolean | null; whisper: string | null};
+	herramientas: {node: string; pnpm: string | null; ffmpeg: boolean; ffprobe: boolean; python3: boolean; webgl: boolean | null; whisper: string | null; blender?: string | null};
 	claves: Record<string, boolean>;
 	comandos_propios: Record<string, boolean>;
 	eleccion: {llm: string; voz: string; voz_porque: string; imagenes: string[]; imagenes_porque: string};
@@ -76,6 +77,13 @@ const requisitos = (d: Diagnostico): Requisito[] => {
 			estado: h.webgl === null ? 'sin probar' : si(h.webgl),
 			para: `las plantillas ${PLANTILLAS_SIN_FOTOS.filter((p) => p !== 'datos').join(', ')} y el modo local`,
 			como: h.webgl === false ? 'actualiza el controlador de video; sin tarjeta gráfica, pon {"chrome": {"gl": "swangle"}} en config/local.json y renderiza con --ligero' : h.webgl ? 'listo' : 'pnpm asistente --estado --webgl (medio minuto)',
+		},
+		{
+			que: 'Blender',
+			tipo: 'opcional',
+			estado: si(h.blender && !h.blender.includes('vieja')),
+			para: 'modelos 3D nuevos que el asistente construye por código para cada video (plantilla medida), sin generador de imágenes',
+			como: h.blender ? `tienes Blender ${h.blender.replace(' (vieja)', '')}: actualízalo a 4.2 o más nuevo (${instalarBlender()})` : instalarBlender(),
 		},
 		{que: 'Whisper', tipo: 'opcional', estado: si(h.whisper), para: 'subtítulos exactos a la palabra con voz propia o del sistema', como: porSistema({darwin: 'brew install whisper-cpp, y su modelo: ver Whisper en docs/proveedores.md', linux: 'compila whisper.cpp: ver Whisper en docs/proveedores.md', win32: 'baja whisper.cpp: ver Whisper en docs/proveedores.md'})},
 		// The public copy of the engine travels without the author's cloned voices: then only Piper or a command of one's own.

@@ -5,13 +5,18 @@ export type Page = {words: number[]; key: number | null; start: number; end: num
 
 // A scene written for this film. code is a program for the kit, already checked and compiled to JavaScript.
 // span holds the first and last word narrated over it, so a word repeated along the film keeps its moment in this scene.
-export type Shot = {id: string; code: string; start: number; end: number; span?: [number, number]};
+export type Shot = {id: string; code: string; start: number; end: number; span?: [number, number]; footage?: Footage};
+
+// Real footage under a scene: a video in public/, the film second its first frame plays at, and its
+// speed (below 1 stretches a short clip over a longer scene). The scene's 3D draws on top of it with a clear background.
+export type Footage = {file: string; at: number; rate?: number};
 
 // Images generated for this film, by the name scene programs use. modelo: a 3D model (.glb) made for this film, for kit.model.
 export type Asset = {file: string; aspect: number; modelo?: boolean};
 
 // ligero: a light render for computers with little or no GPU (one or two passes per frame instead of up to 14).
-export type Film = {name: string; duration: number; words: Word[]; pages: Page[]; shots: Shot[]; assets: Record<string, Asset>; audio: string | null; ligero?: boolean};
+// look 'cine': the montage grades the pictures like film, with grain, vignette and a slight weave.
+export type Film = {name: string; duration: number; words: Word[]; pages: Page[]; shots: Shot[]; assets: Record<string, Asset>; audio: string | null; ligero?: boolean; look?: 'cine'};
 
 export type Passage = {type: 'corte' | 'swipe' | 'fundido'; start: number; end: number};
 export type AssemblyClip = {file: string; from: number; to: number; enter: Passage | null};

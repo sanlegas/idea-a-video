@@ -37,6 +37,8 @@ export type Local = {
 	claves?: Record<string, string>;
 	// A browser for the renders, when the one Remotion downloads is not wanted; gl is its --gl option.
 	chrome?: {ruta?: string; gl?: string};
+	// Blender, when it is not where its installer usually puts it: new 3D models built by code (pnpm blender).
+	blender?: {ruta?: string};
 };
 
 const ARCHIVO = 'config/local.json';

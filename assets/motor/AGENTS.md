@@ -42,6 +42,7 @@ Si la respuesta se rechaza, el pedido trae una sección de correcciones: resuél
 - **Gancho:** los primeros 5 a 10 segundos deciden si alguien se queda. Al escribir un guion o un plan, la primera frase es el gancho (5 a 16 palabras, directo al tema, sin saludo, algo que se pueda mostrar) y el primer plano es corto, cerca y en movimiento. Las reglas completas están en `scripts/lib/gancho.ts`.
 - **Hechos:** el motor no verifica datos. No inventes cifras, nombres ni estudios; marca los que el usuario debe confirmar.
 - **Revisa antes de entregar:** `runs/<flujo>/<nombre>/hoja.png` muestra un cuadro cada pocos segundos.
+- **Modelos 3D nuevos:** con Blender en la máquina (`pnpm blender`), `pnpm estudio` construye solo los objetos clave que faltan en el catálogo: responde sus pedidos `modelos`, `modelo` (código Python) y `critico` (vista previa). No pide generador de imágenes; `--sin-blender` lo apaga. A mano: `pnpm blender <corrida>`. Detalle en `docs/blender.md`.
 - **No rehagas de más:** los pasos terminados se saltan; `--desde <paso>` rehace desde uno y `--solo <paso>` solo ese.
 
 ## Dónde está cada cosa
@@ -54,4 +55,4 @@ Si la respuesta se rechaza, el pedido trae una sección de correcciones: resuél
 | `config/medios.json` | Valores por defecto de voz, imágenes y música |
 | `config/models.json` | Perfiles de LLM para `--llm` |
 | `config/local.json` | Lo propio de esta máquina (opcional; ver `config/local.example.json`) |
-| `docs/` | Documentación completa: `primer-uso.md`, `inicio.md`, `maquina.md`, `proveedores.md`, `edicion.md`, `opciones.md`, `licencias.md`, `problemas.md` |
+| `docs/` | Documentación completa: `primer-uso.md`, `inicio.md`, `maquina.md`, `proveedores.md`, `blender.md`, `edicion.md`, `opciones.md`, `licencias.md`, `problemas.md` |

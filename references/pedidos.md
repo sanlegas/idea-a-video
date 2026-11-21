@@ -42,7 +42,7 @@ Lee las correcciones completas antes de reescribir: suelen ser varias y todas de
 | Storytelling | `guion` (solo con `--tema`), `direccion`, `planos` |
 | Tinta | `reparto`, `tomas` |
 | Plantillas | `catalogo`, `brief`, `art`, `tomas`, `storyboard`, `chips`, `sound` |
-| Estudio | ideas, dirección de cada escena, programa de cada escena, crítica con imagen y sonido |
+| Estudio | ideas; con Blender, `modelos` (cuáles faltan), `modelo` (código Python de cada uno) y su crítica con imagen; dirección de cada escena, programa de cada escena, crítica con imagen y sonido |
 
 En Storytelling también puedes entregar las respuestas como archivos propios, sin esperar el pedido: `--direccion x.json`, `--planos x.json`, `--estilo x.json`, `--musica x.json`.
 

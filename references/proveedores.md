@@ -11,6 +11,7 @@ Cada pieza que antes pedía una máquina con GPU tiene tres caminos: algo propio
 | LLM de texto | servidor compatible con OpenAI (`--llm local`) | OpenRouter o DeepSeek (`--llm openrouter`, `--llm deepseek`) | el asistente de la sesión (`--llm sesion`) |
 | LLM que ve imágenes | modelo local con visión | OpenRouter | el asistente, si puede ver imágenes |
 | Imagen a 3D (Tinta) | comando de 3D | no incluido | catálogo de modelos, construcciones y personaje |
+| Modelos 3D nuevos (Estudio) | Blender, con el asistente escribiendo el modelo ([blender.md](blender.md)) | — | catálogo de modelos y dibujos 2D |
 
 ## Voz
 

@@ -36,9 +36,9 @@ export class StudioPost {
 		});
 		this.final = new THREE.ShaderMaterial({
 			...common,
-			uniforms: {tex: {value: null}, b0: {value: null}, b1: {value: null}, b2: {value: null}, b3: {value: null}, uBloom: {value: 0.32}, uFrame: {value: 0}, uExposure: {value: 1}},
+			uniforms: {tex: {value: null}, b0: {value: null}, b1: {value: null}, b2: {value: null}, b3: {value: null}, uBloom: {value: 0.32}, uFrame: {value: 0}, uExposure: {value: 1}, uClear: {value: 0}},
 			fragmentShader: /* glsl */ `
-			varying vec2 vUv; uniform sampler2D tex, b0, b1, b2, b3; uniform float uBloom, uFrame, uExposure;
+			varying vec2 vUv; uniform sampler2D tex, b0, b1, b2, b3; uniform float uBloom, uFrame, uExposure, uClear;
 			float hash(vec2 p){ return fract(sin(dot(p, vec2(12.9898, 78.233)) + uFrame * 0.37) * 43758.5453); }
 			vec3 neutral(vec3 color){
 				float x = min(color.r, min(color.g, color.b));
@@ -55,8 +55,18 @@ export class StudioPost {
 			}
 			vec3 encode(vec3 c){ return mix(c * 12.92, 1.055 * pow(max(c, vec3(0.0)), vec3(1.0 / 2.4)) - 0.055, step(0.0031308, c)); }
 			void main(){
-				vec3 c = texture2D(tex, vUv).rgb * uExposure;
-				c += (texture2D(b0, vUv).rgb * 0.5 + texture2D(b1, vUv).rgb * 0.7 + texture2D(b2, vUv).rgb * 0.9 + texture2D(b3, vUv).rgb * 1.1) * uBloom;
+				vec4 s = texture2D(tex, vUv);
+				vec3 c = s.rgb * uExposure;
+				vec3 glow = (texture2D(b0, vUv).rgb * 0.5 + texture2D(b1, vUv).rgb * 0.7 + texture2D(b2, vUv).rgb * 0.9 + texture2D(b3, vUv).rgb * 1.1) * uBloom;
+				if (uClear > 0.5) {
+					// Over footage: premultiplied light with its own coverage; glow adds light where nothing was drawn.
+					vec3 L = c + glow;
+					float a = clamp(s.a + max(L.r, max(L.g, L.b)), 0.0, 1.0);
+					vec3 un = a > 0.0001 ? L / a : vec3(0.0);
+					gl_FragColor = vec4(encode(neutral(un)) * a, a);
+					return;
+				}
+				c += glow;
 				vec2 q = (vUv - vec2(0.5, 0.52)) * vec2(1.05, 0.92);
 				c *= 1.0 - smoothstep(0.1, 0.62, length(q)) * 0.62;
 				c = encode(neutral(c));
@@ -76,7 +86,7 @@ export class StudioPost {
 		this.gl.render(this.scene, this.camera);
 	}
 
-	render(input: THREE.Texture, frame: number, exposure: number) {
+	render(input: THREE.Texture, frame: number, exposure: number, clear = false) {
 		this.bright.uniforms.tex.value = input;
 		this.pass(this.bright, this.levels[0].a);
 		let source: THREE.Texture = this.levels[0].a.texture;
@@ -98,6 +108,7 @@ export class StudioPost {
 		f.b3.value = this.levels[3].b.texture;
 		f.uFrame.value = frame;
 		f.uExposure.value = exposure;
+		f.uClear.value = clear ? 1 : 0;
 		this.pass(this.final, null);
 	}
 }

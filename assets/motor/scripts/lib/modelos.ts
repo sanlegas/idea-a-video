@@ -2,6 +2,7 @@
 // a chair or an office worker built once is not built again. Each model is kit/modelos/<nombre>.glb, and
 // kit/modelos/catalogo.json says what it shows, how big it is and which parts a scene can move.
 import {existsSync, readFileSync} from 'node:fs';
+import path from 'node:path';
 
 export const KIT_MODELOS = 'kit/modelos';
 const CATALOGO = `${KIT_MODELOS}/catalogo.json`;
@@ -24,7 +25,13 @@ export const describir = (m: ModeloKit) => (m.medidas ? `${m.en} (proporción an
 // A run's model entry: a .glb of its own ({archivo, en}) or one from the shared catalog ({kit: "nombre"} or just {}).
 export type EntradaModelo = {archivo?: string; en?: string; kit?: string};
 export const resolverModelo = (nombre: string, e: EntradaModelo = {}): {archivo: string; en: string} => {
-	if (e.archivo) return {archivo: e.archivo, en: e.en ?? nombre};
+	if (e.archivo) {
+		// A model built by code (pnpm blender) leaves its measures in anclas.json beside it: the scene writer gets its
+		// proportions as it does for the catalog's.
+		const anclas = path.join(path.dirname(e.archivo), 'anclas.json');
+		const medidas = existsSync(anclas) ? (JSON.parse(readFileSync(anclas, 'utf8')) as Record<string, {medidas?: number[]}>)[nombre]?.medidas : undefined;
+		return {archivo: e.archivo, en: describir({en: e.en ?? nombre, medidas})};
+	}
 	const id = e.kit ?? nombre;
 	const m = catalogoKit()[id];
 	if (!m) throw new Error(`no hay modelo "${id}" en ${KIT_MODELOS}: búscalo con pnpm modelos buscar <palabra>`);

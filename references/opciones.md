@@ -51,7 +51,7 @@ Se guarda con `pnpm asistente --guardar <ajuste>=<valor>`. Recomendado: `modo=au
 | Flujo | Qué hace | Entra | Sale | Qué necesita |
 | --- | --- | --- | --- | --- |
 | `plantillas` | Video 3D con tomas ya programadas que un LLM elige y rellena | guion (.md) | `runs/<nombre>/film.mp4` | voz y LLM (el asistente de la sesión, o una clave); render 3D con WebGL |
-| `estudio` | Video 3D donde un LLM inventa, programa, mira y corrige cada escena | guion (.md) | `runs/<nombre>/film.mp4` | voz y LLM; imágenes generadas opcionales (sin ellas, modelos 3D del catálogo y dibujos 2D hechos con código); render 3D con WebGL (--ligero si hay poca GPU) |
+| `estudio` | Video 3D donde un LLM inventa, programa, mira y corrige cada escena | guion (.md) | `runs/<nombre>/film.mp4` | voz y LLM; imágenes generadas opcionales (sin ellas, modelos 3D del catálogo y dibujos 2D hechos con código); con Blender, modelos 3D nuevos escritos por el LLM; render 3D con WebGL (--ligero si hay poca GPU) |
 | `tinta` | Video 3D ilustrado: objetos con contorno de tinta sobre maquetas | guion (.md) | `runs/tinta/<nombre>/film.mp4` | voz y LLM; objetos nuevos en 3D solo con un comando propio; render 3D con WebGL |
 | `storytelling` | Corto narrado de corte rápido: escenas fotográficas, frases del narrador y láminas gráficas | guion (.md) o tema | `runs/storytelling/<nombre>/film.mp4` | cualquier máquina: voz e imágenes según claves y modelos propios; --borrador sin nada |
 | `explica` | Explicativo 2D: texto animado, gráficas y transiciones | plan (.json) escrito a mano | `runs/explica/<nombre>/film.mp4` | cualquier máquina |
@@ -60,7 +60,7 @@ Se guarda con `pnpm asistente --guardar <ajuste>=<valor>`. Recomendado: `modo=au
 
 - **plantillas:** `pnpm plantillas <nombre> --guion guiones/x.md [--llm sesion|openrouter|deepseek|local] [--from paso] [--until paso] [--only paso] [--factcheck]`
   14 pasos declarados; salta los hechos; --from, --until, --only. Detalle: `docs/flujo-plantillas.md`
-- **estudio:** `pnpm estudio <nombre> --guion guiones/x.md [--llm sesion|openrouter|deepseek|local] [--modelos a,b] [--sin-imagenes] [--ligero] [--intentos 3] [--una-escena] [--rehacer] [--sin-sonido]`
+- **estudio:** `pnpm estudio <nombre> --guion guiones/x.md [--llm sesion|openrouter|deepseek|local] [--modelos a,b] [--sin-imagenes] [--sin-blender] [--ligero] [--intentos 3] [--una-escena] [--rehacer] [--sin-sonido]`
   etapas fijas; reutiliza lo hecho; --rehacer. Detalle: `docs/flujo-estudio.md`
 - **tinta:** `pnpm tinta <nombre> --guion guiones/tinta/x.md [--llm sesion|openrouter|deepseek|local] [--desde paso] [--hasta paso] [--solo paso] [--plan]`
   11 pasos; salta los hechos; --desde, --hasta, --solo; --plan estima sin correr. Detalle: `docs/flujo-tinta.md`
@@ -71,7 +71,7 @@ Se guarda con `pnpm asistente --guardar <ajuste>=<valor>`. Recomendado: `modo=au
 
 ## Modelos 3D del catálogo (`pnpm modelos`)
 
-146 modelos de juguete hechos por código, en `kit/modelos`, para el flujo estudio: personas, animales, muebles, aparatos, vehículos y edificios. Los que tienen partes con nombre (brazos, puertas, agujas) se mueven en las escenas. `pnpm modelos buscar <palabra>` los encuentra y `pnpm estudio <nombre> --modelos a,b` los pone en un video.
+146 modelos de juguete hechos por código, en `kit/modelos`, para el flujo estudio: personas, animales, muebles, aparatos, vehículos y edificios. Los que tienen partes con nombre (brazos, puertas, agujas) se mueven en las escenas. `pnpm modelos buscar <palabra>` los encuentra y `pnpm estudio <nombre> --modelos a,b` los pone en un video. Lo que falte, el asistente lo construye por código en Blender: `pnpm blender <nombre>` (ver `blender.md`).
 
 ## Valores por defecto (`config/medios.json`)
 

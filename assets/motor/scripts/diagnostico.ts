@@ -17,6 +17,7 @@ import {ensurePack} from './lib/kenney';
 import {carpetaTemporal, remotion} from './lib/sistema';
 import {FLUJOS} from './lib/flujos';
 import {catalogoKit} from './lib/modelos';
+import {buscarBlender} from './lib/blender';
 
 const args = process.argv.slice(2);
 const sale = (programa: string, a: string[]) => {
@@ -48,6 +49,7 @@ const voz = resolverVoz(medios().voz.proveedor);
 const imagenes = resolverImagenes(medios().imagen.proveedores);
 const oye = oido();
 const perfil = perfilPorDefecto();
+const blender = buscarBlender();
 
 // One 3D frame of the sample film through the same browser the flows use. Slow, so only on request; the sample
 // uses furniture of the catalogue, which is downloaded the first time. The answer is kept, with the browser settings
@@ -89,6 +91,8 @@ const main = async () => {
 			navegador_de_render: navegador().ejecutable ?? (existsSync('node_modules/.remotion') ? 'el de Remotion, ya descargado' : 'el de Remotion; se descarga en el primer render'),
 			webgl: pruebaWebgl,
 			whisper: oye === 'whisper' ? `${whisper().cli} con ${path.basename(whisper().modelo)}` : oye === 'comando' ? 'comando propio' : null,
+			// New 3D models built by code for estudio (pnpm blender): no picture generator involved.
+			blender: blender ? `${blender.version}${blender.vieja ? ' (vieja)' : ''}` : null,
 		},
 		claves,
 		comandos_propios: {voz: Boolean(l.voz), imagen: Boolean(l.imagen), recorte: Boolean(l.recorte), tiempos: Boolean(l.tiempos), modelo3d: Boolean(l.modelo3d), llm_local: Boolean(l.llm?.url ?? variable('LM_BASE'))},
@@ -100,6 +104,7 @@ const main = async () => {
 			imagenes_porque: imagenes.porque,
 			tiempos_de_palabra: voz.proveedor === 'elevenlabs' ? 'los que da ElevenLabs con el audio' : oye ? 'medidos' : 'estimados dentro de cada frase',
 			objetos_3d_nuevos: l.modelo3d ? 'comando propio' : 'no: catálogo, construcciones y personaje',
+			modelos_por_codigo: blender ? 'Blender: pnpm estudio los construye solo para cada video (el LLM escribe cada modelo)' : 'no: sin Blender, solo los del catálogo',
 		},
 	};
 
@@ -126,8 +131,8 @@ const main = async () => {
 		estudio: !base
 			? {estado: 'falta', nota: sinBase}
 			: !dibuja
-				? {estado: 'limitado', nota: [`modo local: escenas con ${Object.keys(catalogoKit()).length} modelos 3D del catálogo y dibujos 2D hechos con código, sin imágenes generadas (con ${CLAVES.fal} o un comando de imagen se suman objetos realistas)`, conVoz ? `voz ${voz.proveedor}` : vozFalta, ...(sesion ? ['con el asistente de la sesión es lento: varias rondas por escena'] : []), 'pide WebGL; sin GPU usa --ligero'].join('; ')}
-				: {estado: conVoz && !sesion ? 'listo' : 'limitado', nota: [conVoz ? `voz ${voz.proveedor}` : vozFalta, l.recorte ? 'recorte con comando propio' : 'recorte simple (fondo negro a transparente)', ...(sesion ? ['con el asistente de la sesión es lento: varias rondas por escena; va mejor con una clave de LLM'] : []), 'pide WebGL'].join('; ')},
+				? {estado: 'limitado', nota: [`modo local: escenas con ${Object.keys(catalogoKit()).length} modelos 3D del catálogo${blender ? ', modelos nuevos que el asistente construye en Blender' : ''} y dibujos 2D hechos con código, sin imágenes generadas (con ${CLAVES.fal} o un comando de imagen se suman objetos realistas)`, conVoz ? `voz ${voz.proveedor}` : vozFalta, ...(sesion ? ['con el asistente de la sesión es lento: varias rondas por escena'] : []), 'pide WebGL; sin GPU usa --ligero'].join('; ')}
+				: {estado: conVoz && !sesion ? 'listo' : 'limitado', nota: [conVoz ? `voz ${voz.proveedor}` : vozFalta, l.recorte ? 'recorte con comando propio' : 'recorte simple (fondo negro a transparente)', ...(blender ? ['modelos nuevos con Blender'] : []), ...(sesion ? ['con el asistente de la sesión es lento: varias rondas por escena; va mejor con una clave de LLM'] : []), 'pide WebGL'].join('; ')},
 		'desde-video': !base ? {estado: 'falta', nota: sinBase} : oye ? {estado: 'listo', nota: `oye con ${hechos.herramientas.whisper}; describe con el LLM ${perfil}`} : {estado: 'falta', nota: 'necesita oír la voz del video: instala whisper.cpp y su modelo (ver whisper en config/local.example.json)'},
 	};
 
@@ -146,7 +151,7 @@ const main = async () => {
 	const si = (b: unknown) => (b ? 'sí' : 'no');
 	console.log(`Máquina: ${s.plataforma}, ${s.procesador}, ${s.nucleos} núcleos, ${s.memoria_gb} GB de memoria, ${s.disco_libre_gb} GB libres`);
 	console.log(`GPU: ${s.gpu.nombre}${s.gpu.memoria_gb ? ` (${s.gpu.memoria_gb} GB${s.gpu.tipo === 'apple' ? ' compartidos' : ''})` : ''}`);
-	console.log(`Herramientas: Node ${h.node}, pnpm ${h.pnpm ?? 'no'}, ffmpeg ${si(h.ffmpeg)}, python3 ${si(h.python3)}, whisper ${h.whisper ?? 'no'}`);
+	console.log(`Herramientas: Node ${h.node}, pnpm ${h.pnpm ?? 'no'}, ffmpeg ${si(h.ffmpeg)}, python3 ${si(h.python3)}, whisper ${h.whisper ?? 'no'}, Blender ${h.blender ?? 'no'}`);
 	console.log(`Navegador de render: ${h.navegador_de_render}${h.webgl === null ? '' : `; WebGL ${h.webgl ? 'funciona' : 'NO funciona'}`}`);
 	console.log(`Claves en el entorno o en .env: ${Object.entries(claves).map(([n, v]) => `${n} ${si(v)}`).join(', ')}`);
 	console.log(`Comandos propios (config/local.json): ${Object.entries(hechos.comandos_propios).filter(([, v]) => v).map(([n]) => n).join(', ') || 'ninguno'}`);
@@ -155,7 +160,8 @@ const main = async () => {
 	console.log(`- Voz: ${voz.proveedor} (${voz.porque})`);
 	console.log(`- Imágenes: ${imagenes.proveedor.join(' > ')} (${imagenes.porque})`);
 	console.log(`- Tiempos de palabra: ${hechos.eleccion.tiempos_de_palabra}`);
-	console.log(`- Objetos 3D nuevos: ${hechos.eleccion.objetos_3d_nuevos}`);
+	console.log(`- Objetos 3D nuevos (de una imagen): ${hechos.eleccion.objetos_3d_nuevos}`);
+	console.log(`- Modelos 3D por código: ${hechos.eleccion.modelos_por_codigo}`);
 	console.log('\n| Flujo | Estado | Con qué |\n| --- | --- | --- |');
 	Object.entries(flujos).forEach(([id, f]) => console.log(`| ${id} | ${f.estado} | ${f.nota} |`));
 	if (h.webgl === null) console.log('\nTinta, Plantillas y Estudio renderizan en 3D: `pnpm diagnostico --webgl` comprueba que el navegador dé WebGL en esta máquina.');

@@ -39,6 +39,7 @@ Trae, en orden:
    | --- | --- | --- |
    | Node 20, pnpm, ffmpeg y ffprobe, 2 GB libres | obligatorio | todo: sin ellos no sale ningún video |
    | WebGL en el navegador de render | 3D | las plantillas `medida`, `ilustrado` y `mundo`, y el modo local; `sin probar` hasta correr `--webgl` |
+   | Blender | opcional | modelos 3D nuevos que el asistente construye por código para la plantilla `medida`, sin generador de imágenes |
    | Whisper | opcional | subtítulos exactos a la palabra sin ElevenLabs |
    | Voz propia (Piper u otro comando) | opcional | voz natural sin pagar |
 
@@ -86,7 +87,7 @@ Una elección que no existe no guarda nada y dice cuáles hay.
 
 ### 5. Decir los avisos
 
-Al guardar, el comando imprime qué quedó, qué usará `auto`, y bajo **"Antes del primer video"** lo que falta: algo obligatorio sin instalar, una clave que la elección pide, WebGL sin probar para una plantilla 3D, un comando propio sin declarar, o una plantilla que esta máquina no puede correr completa. Díselo al usuario tal cual. En modo local, al final imprime lo opcional que mejoraría el resultado sin costo (Whisper, voz propia): ofrécelo una vez.
+Al guardar, el comando imprime qué quedó, qué usará `auto`, y bajo **"Antes del primer video"** lo que falta: algo obligatorio sin instalar, una clave que la elección pide, WebGL sin probar para una plantilla 3D, un comando propio sin declarar, o una plantilla que esta máquina no puede correr completa. Díselo al usuario tal cual. En modo local, al final imprime lo opcional que mejoraría el resultado sin costo (Blender, Whisper, voz propia): ofrécelo una vez.
 
 **Claves:** nunca las pidas en el chat ni las escribas. El usuario copia `.env.example` a `.env` en la carpeta del motor y pone la suya. Todas son opcionales.
 

@@ -10,6 +10,7 @@
     "estudio": "tsx scripts/estudio/generar.ts",
     "estudio:sonido": "tsx scripts/estudio/sonido.ts",
     "modelos": "tsx scripts/modelos.ts",
+    "blender": "tsx scripts/blender.ts",
     "explica": "tsx scripts/explica/hacer.ts",
     "explica:studio": "remotion studio src/explica/index.tsx",
     "tinta:preparar": "tsx scripts/tinta/preparar.ts",

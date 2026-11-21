@@ -76,6 +76,7 @@ Antes de gastar tiempo o dinero, `--plan` muestra los pasos, el tiempo y el cost
 - **Los hechos son del usuario.** El motor no verifica datos. Marca cada cifra, nombre o estudio del guion para que el usuario lo confirme.
 - **Mira lo que salió.** Con fotos de banco pueden aparecer personas reales, marcas o imágenes que no vienen al caso. Abre `hoja.png`, y si un plano no sirve, cambia su `busca_en` (o su `imagen_en`) y repite `--desde montaje`.
 - **Modelos 3D ya hechos.** Para un video `medida` (flujo estudio), antes de correrlo busca en el catálogo los objetos y personajes del guion: `pnpm modelos buscar <palabra>`. Los que sirvan entran con `--modelos a,b`. Detalle en [flujo-estudio.md](references/flujo-estudio.md).
+- **Modelos 3D nuevos con Blender.** Si la máquina tiene Blender (`pnpm blender` lo dice), `pnpm estudio` construye solo los objetos y personajes clave que faltan en el catálogo: te deja los pedidos `modelos` (cuáles), `modelo` (el código Python de cada uno) y `critico` (su vista previa). No pide generador de imágenes ni claves; `--sin-blender` lo apaga. También puedes construirlos a mano antes con `pnpm blender <corrida>`. Reglas y piezas en [blender.md](references/blender.md). Sin Blender, ofrécelo como opcional (es gratis) y sigue con el catálogo y dibujos 2D.
 - **Estudio en local.** Sin `FAL_KEY` ni comando de imagen (o con `modo=local`), Estudio corre en modo local: cada escena usa modelos 3D del catálogo o un dibujo 2D hecho con código, sin servicios externos. `--sin-imagenes` lo fuerza aunque haya clave. En computadoras con poca GPU (o sin ella) agrega `--ligero`: renderiza unas cuatro veces más rápido. Si `pnpm diagnostico --webgl` no da WebGL, Estudio no puede renderizar.
 - **Si no puedes ver imágenes**, no respondas pedidos que traen una: usa `--llm openrouter` en esos pasos (Estudio, Plantillas con tomas nuevas) y avisa que pide clave.
 
@@ -86,6 +87,7 @@ Antes de gastar tiempo o dinero, `--plan` muestra los pasos, el tiempo y el cost
 - [maquina.md](references/maquina.md): qué necesita cada flujo y cómo leer el diagnóstico.
 - [proveedores.md](references/proveedores.md): voz, imágenes, LLM, 3D y transcripción; local, nube y sin clave; variables de entorno.
 - [pedidos.md](references/pedidos.md): cómo respondes cuando haces de LLM.
+- [blender.md](references/blender.md): modelos 3D nuevos que construyes por código en Blender, sin generador de imágenes.
 - [gancho.md](references/gancho.md): los primeros 5 a 10 segundos de cualquier guion y la apertura audiovisual, en todos los flujos.
 - [edicion.md](references/edicion.md): estilos, transiciones, subtítulos, sonidos y música.
 - [opciones.md](references/opciones.md): todas las opciones y sus valores por defecto, generado del código.

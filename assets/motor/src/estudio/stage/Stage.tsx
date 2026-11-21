@@ -32,6 +32,22 @@ const halton = (i: number, base: number) => {
 	return r;
 };
 
+// Over footage, additive light (glows, dots, stars) must add colour without making its whole sprite opaque: the alpha
+// channel keeps only what solid things cover, and the post pass turns light into coverage.
+const keepAlpha = (o: THREE.Object3D) => {
+	const m = (o as THREE.Mesh).material as THREE.Material | THREE.Material[] | undefined;
+	for (const x of m ? (Array.isArray(m) ? m : [m]) : []) {
+		if (x.blending !== THREE.AdditiveBlending) continue;
+		x.blending = THREE.CustomBlending;
+		x.blendEquation = THREE.AddEquation;
+		x.blendSrc = THREE.SrcAlphaFactor;
+		x.blendDst = THREE.OneFactor;
+		x.blendSrcAlpha = THREE.ZeroFactor;
+		x.blendDstAlpha = THREE.OneFactor;
+		x.needsUpdate = true;
+	}
+};
+
 class Studio {
 	private scene = new THREE.Scene();
 	private camera: THREE.PerspectiveCamera;
@@ -52,18 +68,22 @@ class Studio {
 	private look: (position: THREE.Vector3) => void;
 	private hud: Hud;
 	private ligero: boolean;
+	// Footage under the scene: the 3D keeps a clear background so the video shows through.
+	private clear: boolean;
 
 	constructor(private gl: THREE.WebGLRenderer, film: Film, private shot: Shot, hudRoot: HTMLElement | null, {textures, models}: Loaded, private fps: number, private width: number, private height: number) {
 		this.ligero = Boolean(film.ligero);
+		this.clear = Boolean(shot.footage);
 		gl.toneMapping = THREE.NoToneMapping;
 		gl.autoClear = true;
-		gl.setClearColor('#000000', 1);
+		gl.setClearColor('#000000', this.clear ? 0 : 1);
 		const {setup, program} = readProgram(shot.code);
 		const world = WORLDS[setup.world] ?? WORLDS.azul;
 		this.camera = new THREE.PerspectiveCamera(50, width / height, 0.1, 2000);
 		this.scene.environment = studioEnvironment(gl, world);
 		studioLights(this.scene, world);
 		this.dome = buildSky(this.scene, setup.stars ? {...world, horizon: world.zenith} : world, Boolean(setup.floor));
+		this.dome.visible = !this.clear;
 		if (setup.bokeh) {
 			this.bokeh = buildBokeh(this.scene, world, Boolean(setup.floor));
 			this.bokehMesh = this.scene.children[this.scene.children.length - 1];
@@ -91,8 +111,11 @@ class Studio {
 			fragmentShader: `varying vec2 vUv; uniform sampler2D uA, uB; uniform float uMix;
 			vec3 clean(vec3 c) { return (isnan(c.r) || isnan(c.g) || isnan(c.b) || isinf(c.r) || isinf(c.g) || isinf(c.b)) ? vec3(0.0) : min(c, vec3(20.0)); }
 			void main() {
-				vec3 b = clean(texture2D(uB, vUv).rgb);
-				gl_FragColor = vec4(uMix >= 0.999 ? b : mix(clean(texture2D(uA, vUv).rgb), b, uMix), 1.0);
+				vec4 sb = texture2D(uB, vUv);
+				vec4 b = vec4(clean(sb.rgb), clamp(sb.a, 0.0, 1.0));
+				vec4 sa = texture2D(uA, vUv);
+				vec4 a = vec4(clean(sa.rgb), clamp(sa.a, 0.0, 1.0));
+				gl_FragColor = uMix >= 0.999 ? b : mix(a, b, uMix);
 			}`,
 		});
 		this.quadScene.add(new THREE.Mesh(new THREE.PlaneGeometry(2, 2), this.quad));
@@ -113,6 +136,7 @@ class Studio {
 		this.look(p.pos);
 		if (this.bokeh) this.bokeh.uniforms.uT.value = t;
 		this.update(t);
+		if (this.clear) this.scene.traverse(keepAlpha);
 	}
 
 	private samplesAt(t: number) {
@@ -151,7 +175,7 @@ class Studio {
 		this.camera.clearViewOffset();
 		this.place(t, 0);
 		this.camera.clearViewOffset();
-		this.post.render(read.texture, frame, 1);
+		this.post.render(read.texture, frame, 1, this.clear);
 		this.hud.sync(t, this.poseAt(t));
 	}
 }
@@ -211,7 +235,7 @@ export const Stage: React.FC<{film: Film; shot: Shot}> = ({film, shot}) => {
 	return (
 		<>
 			{loaded ? (
-				<ThreeCanvas width={width} height={height} flat linear dpr={1} frameloop="demand" gl={{antialias: false, alpha: false, preserveDrawingBuffer: true, powerPreference: 'high-performance'}}>
+				<ThreeCanvas width={width} height={height} flat linear dpr={1} frameloop="demand" style={{position: 'absolute', inset: 0}} gl={{antialias: false, alpha: Boolean(shot.footage), premultipliedAlpha: true, preserveDrawingBuffer: true, powerPreference: 'high-performance'}}>
 					<Rig film={film} shot={shot} hud={hud} loaded={loaded} />
 				</ThreeCanvas>
 			) : null}

@@ -29,11 +29,11 @@ const TODOS: Record<string, Flujo> = {
 	},
 	estudio: {
 		script: 'scripts/estudio/generar.ts',
-		uso: '<nombre> --guion guiones/x.md [--llm sesion|openrouter|deepseek|local] [--modelos a,b] [--sin-imagenes] [--ligero] [--intentos 3] [--una-escena] [--rehacer] [--sin-sonido]',
+		uso: '<nombre> --guion guiones/x.md [--llm sesion|openrouter|deepseek|local] [--modelos a,b] [--sin-imagenes] [--sin-blender] [--ligero] [--intentos 3] [--una-escena] [--rehacer] [--sin-sonido]',
 		hace: 'Video 3D donde un LLM inventa, programa, mira y corrige cada escena',
 		entra: 'guion (.md)',
 		sale: 'runs/<nombre>/film.mp4',
-		corre: 'voz y LLM; imágenes generadas opcionales (sin ellas, modelos 3D del catálogo y dibujos 2D hechos con código); render 3D con WebGL (--ligero si hay poca GPU)',
+		corre: 'voz y LLM; imágenes generadas opcionales (sin ellas, modelos 3D del catálogo y dibujos 2D hechos con código); con Blender, modelos 3D nuevos escritos por el LLM; render 3D con WebGL (--ligero si hay poca GPU)',
 		pasos: 'etapas fijas; reutiliza lo hecho; --rehacer',
 		doc: 'docs/flujo-estudio.md',
 	},

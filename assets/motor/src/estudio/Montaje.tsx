@@ -1,6 +1,7 @@
 import React from 'react';
 import {AbsoluteFill, Html5Audio, OffthreadVideo, Sequence, staticFile, useCurrentFrame, useVideoConfig} from 'remotion';
 import {easeInOut3, HEIGHT, ramp, type Assembly, type AssemblyClip} from './film';
+import {cineGrade, CineOverlay} from './ui/Cine';
 import {Karaoke} from './ui/Karaoke';
 
 // A swipe smears along its way while it is fast, as a real pan does; a fade pulls focus, so the old picture goes
@@ -48,13 +49,16 @@ export const Montaje: React.FC<{assembly: Assembly}> = ({assembly}) => {
 					<feGaussianBlur stdDeviation="0 46" />
 				</filter>
 			</svg>
-			{clips.map((clip, i) => (
-				<Sequence key={clip.file} from={Math.round(clip.from * fps)} durationInFrames={Math.max(1, Math.round((clip.to - clip.from) * fps))} layout="none">
-					<AbsoluteFill style={motion(clip, clips[i + 1], t)}>
-						<OffthreadVideo src={staticFile(clip.file)} muted />
-					</AbsoluteFill>
-				</Sequence>
-			))}
+			<AbsoluteFill style={film.look === 'cine' ? cineGrade(frame) : undefined}>
+				{clips.map((clip, i) => (
+					<Sequence key={clip.file} from={Math.round(clip.from * fps)} durationInFrames={Math.max(1, Math.round((clip.to - clip.from) * fps))} layout="none">
+						<AbsoluteFill style={motion(clip, clips[i + 1], t)}>
+							<OffthreadVideo src={staticFile(clip.file)} muted />
+						</AbsoluteFill>
+					</Sequence>
+				))}
+			</AbsoluteFill>
+			{film.look === 'cine' ? <CineOverlay frame={frame} /> : null}
 			<Karaoke film={film} t={t} />
 			{film.audio ? <Html5Audio src={staticFile(film.audio)} /> : null}
 		</AbsoluteFill>

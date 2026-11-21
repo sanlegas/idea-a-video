@@ -33,6 +33,7 @@ El diagnóstico no cambia nada. Reporta sistema, memoria, GPU, disco, herramient
 | Render de video (todos los flujos) | Procesador y memoria | Medido: un corto de 87 s tardó de 4 a 5 minutos en un equipo de escritorio; un borrador de 68 s, 1:39 en una laptop Apple M1 con 16 GB |
 | Voz del sistema | Nada que instalar en macOS y Windows | En Linux, `espeak-ng`, que suena robótico |
 | Voz con Piper | Python 3.9 o más nuevo y `pip install piper-tts`; voz de 63 MB | Corre en el procesador: 25 frases en 2 s en un equipo de escritorio. Probado en Linux; en macOS con Apple Silicon la versión 1.8.0 falla al cargar sus datos |
+| Modelos 3D nuevos por código (Estudio) | Blender 4.2 o más nuevo | Sin GPU especial ni generador de imágenes: un modelo de juguete tarda un par de segundos. Ver [blender.md](blender.md) |
 | Medir cada palabra (Whisper) | `whisper-cli` de whisper.cpp y un modelo `ggml` | Sin él, los tiempos se estiman dentro de cada frase. Con ElevenLabs no hace falta |
 | Recorte de fondo (Estudio) | Python con `rembg` y `pillow` | Sin él, el fondo negro se vuelve transparente: más burdo |
 | Generar imágenes con modelo propio | GPU y un comando que cumpla el contrato | Ver [proveedores.md](proveedores.md) |

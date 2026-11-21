@@ -1,15 +1,16 @@
 // Guion to finished video, with no person in the loop.
-// usage: pnpm estudio <name> --guion file [--llm deepseek|glm|openrouter|local|mix] [--intentos 3] [--una-escena] [--rehacer] [--sin-sonido]
+// usage: pnpm estudio <name> --guion file [--llm deepseek|glm|openrouter|local|mix] [--intentos 3] [--una-escena] [--rehacer] [--sin-sonido] [--sin-blender]
+// With Blender on this machine, the LLM also writes the new 3D models the film needs and Blender builds them (--sin-blender skips it).
 import {execFileSync} from 'node:child_process';
 import {copyFileSync, existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync} from 'node:fs';
 import path from 'node:path';
-import type {Assembly, AssemblyClip, Film, Shot, Word} from '../../src/estudio/film';
+import type {Assembly, AssemblyClip, Film, Footage, Shot, Word} from '../../src/estudio/film';
 import {notesFor, readGuion} from '../lib/guion';
 import {clearLocal, perfilPorDefecto, spend} from '../lib/llm';
 import {medios, resolverVoz} from '../lib/medios';
 import {principal} from '../lib/orquestador';
 import {narrarFrases} from '../lib/voz';
-import {cached, direct, planIdeas, planScenes, usarModelos, usarModoLocal, writeScene, type Direction, type Ideas, type SceneBrief, type SceneResult} from './lib/cerebro';
+import {cached, direct, modoLocal, planIdeas, planScenes, usarModelos, usarModoLocal, writeScene, type Direction, type Ideas, type SceneBrief, type SceneResult} from './lib/cerebro';
 import {prepararEntorno} from '../lib/entorno';
 import {ensureImages, proveedoresDibujo, type ImageAsset} from './lib/imagenes';
 import {makePages} from './lib/paginas';
@@ -19,6 +20,8 @@ import {openRenderer} from './lib/render';
 import {addSound} from './lib/sonido';
 import {carpetaTemporal} from '../lib/sistema';
 import {catalogoKit, describir, resolverModelo, type EntradaModelo} from '../lib/modelos';
+import {buscarBlender} from '../lib/blender';
+import {modelosNuevos} from './lib/modelos_nuevos';
 
 const args = process.argv.slice(2);
 const flag = (name: string) => {
@@ -100,7 +103,33 @@ const main = async () => {
 	writeFileSync(ideasFile, JSON.stringify(ideas, null, 1));
 	log(`${ideas.escenas.length} escenas: ${ideas.concepto}`);
 
+	// New 3D models for what the catalog lacks, built by code in Blender when this machine has it: no picture generator.
+	const blender = has('sin-blender') || has('una-escena') ? null : buscarBlender();
+	if (blender && !blender.vieja) {
+		const nuevos = await modelosNuevos(blender, `${dir}/modelos_src`, {
+			profile,
+			ideas,
+			guion,
+			estilo: authored.style,
+			catalogo: Object.fromEntries(Object.entries(catalogoKit()).map(([n, m]) => [n, describir(m)])),
+			propios: Object.fromEntries(Object.entries(catalogo).map(([n, m]) => [n, m.en])),
+			log,
+		});
+		if (Object.keys(nuevos).length) {
+			for (const [n, m] of Object.entries(nuevos)) {
+				propios[n] = {archivo: m.archivo, en: m.en};
+				catalogo[n] = resolverModelo(n, propios[n]);
+				copyFileSync(m.archivo, `${pub}/modelos/${n}.glb`);
+			}
+			writeFileSync(`${dir}/modelos.json`, JSON.stringify(propios, null, 1));
+			usarModelos(Object.fromEntries(Object.entries(catalogo).map(([n, m]) => [n, m.en])));
+		}
+	} else if (!has('sin-blender') && !has('una-escena')) log(`modelos nuevos: no (${blender ? `Blender ${blender.version} es más viejo que 4.2` : 'esta máquina no tiene Blender'}); escenas con el catálogo${modoLocal() ? ' y dibujos 2D' : ' e imágenes'}`);
+
 	const planned = planScenes(ideas, words, duration);
+	// Real footage under the scenes and the film look that goes with it; without them every scene draws its own backdrop.
+	let footage: Record<string, Footage> = {};
+	let look: Film['look'] = undefined;
 
 	const style = authored.style.length ? `\nEstilo del autor, obligatorio en todo el video: ${authored.style.join(' ')}` : '';
 	const baseThread = ideas.escenas.length > 1 ? `Concepto: ${ideas.concepto}\nProtagonista recurrente: ${ideas.protagonista}\nColor base: ${ideas.mundo}${style}` : style.trim() || null;
@@ -142,7 +171,7 @@ const main = async () => {
 		assets[r.id] = {file: `run/${name}/assets/${file}`, aspect: r.aspect};
 		log(`recurso ${r.id}: ${r.state}`);
 	});
-	const makeFilm = (shots: Shot[], withText: boolean): Film => ({name, duration, words, pages: withText ? pages : [], shots, assets, audio: null, ...(has('ligero') ? {ligero: true} : {})});
+	const makeFilm = (shots: Shot[], withText: boolean): Film => ({name, duration, words, pages: withText ? pages : [], shots, assets, audio: null, ...(has('ligero') ? {ligero: true} : {}), ...(look ? {look} : {})});
 
 	const renderer = await openRenderer();
 	const results: SceneResult[] = [];
@@ -158,7 +187,7 @@ const main = async () => {
 			result = await writeScene({
 				profile,
 				renderer,
-				base: (code) => makeFilm([{id: p.id, code, start: p.start, end: p.end, span: [p.first, p.last]}], true),
+				base: (code) => makeFilm([{id: p.id, code, start: p.start, end: p.end, span: [p.first, p.last], footage: footage[p.id]}], true),
 				shotId: p.id,
 				scene: brief,
 				direction: directions[i],
@@ -181,7 +210,7 @@ const main = async () => {
 	const clips: AssemblyClip[] = [];
 	for (const [i, p] of planned.entries()) {
 		const from = p.start - lead(i);
-		const shot: Shot = {id: p.id, code: results[i].js, start: from, end: p.end, span: [p.first, p.last]};
+		const shot: Shot = {id: p.id, code: results[i].js, start: from, end: p.end, span: [p.first, p.last], footage: footage[p.id]};
 		const output = `${pub}/clips/${p.id}.mp4`;
 		await renderer.clip(makeFilm([shot], false), p.id, output);
 		const previous = i ? planned[i - 1].exit : null;
